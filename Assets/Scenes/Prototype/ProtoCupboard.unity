@@ -269,8 +269,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1038021654}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &41548469
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,8 +505,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 541194646}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &60218196
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,8 +657,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 294601119}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &72100858
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +674,7 @@ GameObject:
   - component: {fileID: 72100860}
   - component: {fileID: 72100859}
   m_Layer: 0
-  m_Name: AndongSoju
+  m_Name: Alcohol_AndongSoju
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -843,8 +855,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1921382998}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &78404530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,7 +881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dd98689be101beb489c068365d0a82e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44690aafbbb00c54b8670306187e98ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -913,14 +929,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1066179269}
   m_Father: {fileID: 1880141395}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: -156}
-  m_SizeDelta: {x: 355.1091, y: 364.6201}
+  m_AnchoredPosition: {x: 1337.3318, y: 612}
+  m_SizeDelta: {x: 1227.9504, y: 1335.9348}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89745374
 MonoBehaviour:
@@ -966,9 +983,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: material, Assembly-CSharp
-        m_MethodName: liquidCheck
+      - m_Target: {fileID: 1880141397}
+        m_TargetAssemblyTypeName: cocktailingredients, Assembly-CSharp
+        m_MethodName: CocktailingredientsCheck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -998,7 +1015,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 569920b5eddaf3c4f8cfc6b0753d17c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a072372e66409094790988cf8f29c04b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1124,8 +1141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1821444959}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &90260778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,7 +1167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 57c4e88ba960a1842aefce00506132f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df5f6f05d55409145855e8ba6994fc1e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1272,8 +1293,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 153995093}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &95954571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,7 +1319,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 62130465a68000c4f95f2085c0aa787a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba2591d289ba45342a958961f3e8d65a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1323,8 +1348,9 @@ GameObject:
   - component: {fileID: 98682747}
   - component: {fileID: 98682749}
   - component: {fileID: 98682748}
+  - component: {fileID: 98682750}
   m_Layer: 5
-  m_Name: home
+  m_Name: homeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1347,8 +1373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428, y: -154}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -1373.7032, y: -553.9404}
+  m_SizeDelta: {x: 345.7954, y: 366.3908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98682748
 MonoBehaviour:
@@ -1388,6 +1414,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98682746}
   m_CullTransparentMesh: 1
+--- !u!114 &98682750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98682746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 98682748}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1880141396}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: HomeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &105320686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,8 +1700,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1291148893}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &115212130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,8 +1814,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1697478098}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &115212134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,7 +1840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 735ef058f6c0e4847aab867596e72d53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: afea918d5db4275478eb46ede00a7ad8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1914,8 +2004,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 134900308}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &134900308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,8 +2240,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1019464913}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &153995093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,7 +2359,7 @@ RectTransform:
   m_GameObject: {fileID: 160141691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 658485013}
@@ -2271,7 +2369,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 225.5891, y: 343.6537}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.3}
 --- !u!114 &160141694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2378,8 +2476,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 2074500335}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &165184711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,8 +2796,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 479151105}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &175854569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2888,8 +2994,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 105320686}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &195125386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2910,7 +3020,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b1baa9f682e0ae44eb0f9b3d81954f1d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc24326a0973b8f40b9d3a44077df92d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3036,8 +3146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1122545968}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &201123907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3058,7 +3172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bda7da816d3f17e4caf45e457261264a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8348a2755a68c5b41907ba851365dc46, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3222,43 +3336,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 2004590333}
-  liquid: []
---- !u!1 &207846186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 207846187}
-  m_Layer: 0
-  m_Name: "UnderBar\uC804\uD1B5"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &207846187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207846186}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.000004, y: 4.8101907, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1904251582}
-  - {fileID: 876205644}
-  - {fileID: 642176158}
-  - {fileID: 1582739244}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &246379689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,8 +3450,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1645351844}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &246379693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3418,7 +3505,7 @@ GameObject:
   - component: {fileID: 260404898}
   - component: {fileID: 260404897}
   m_Layer: 0
-  m_Name: BacardiRum
+  m_Name: Alcohol_BacardiRum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3637,8 +3724,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1343034432}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &281962941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3734,7 +3825,7 @@ GameObject:
   - component: {fileID: 285701529}
   - component: {fileID: 285701528}
   m_Layer: 0
-  m_Name: BourbonWhisky
+  m_Name: Alcohol_BourbonWhisky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3832,7 +3923,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294601119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.665578, y: -8.036046, z: -2}
+  m_LocalPosition: {x: 4.97, y: -8.036046, z: -5}
   m_LocalScale: {x: 0.4441208, y: 0.81999767, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3891,6 +3982,158 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &299561557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299561558}
+  - component: {fileID: 299561562}
+  - component: {fileID: 299561561}
+  - component: {fileID: 299561560}
+  - component: {fileID: 299561559}
+  m_Layer: 5
+  m_Name: Lime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &299561558
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299561557}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 658485013}
+  m_RootOrder: 67
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 225.5891, y: 343.6537}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &299561559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299561557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
+  cocktailingredientslObject: {fileID: 784587690}
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
+--- !u!114 &299561560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299561557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 299561561}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 299561559}
+        m_TargetAssemblyTypeName: cocktailingredients, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &299561561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299561557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d2d7995bf4eaede458648853ca860c25, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &299561562
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299561557}
+  m_CullTransparentMesh: 1
 --- !u!1 &302554165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,8 +4280,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 414426254}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &308100783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,8 +4394,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 561358777}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &308100787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4186,6 +4437,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308100783}
+  m_CullTransparentMesh: 1
+--- !u!1 &311866999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311867000}
+  - component: {fileID: 311867002}
+  - component: {fileID: 311867001}
+  m_Layer: 5
+  m_Name: Timebar 2MIN (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &311867000
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311866999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1762587239}
+  m_Father: {fileID: 1880141395}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1383.3483, y: 611}
+  m_SizeDelta: {x: 409.3035, y: 182.7849}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &311867001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311866999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.24528301, g: 0.08654325, b: 0.08654325, a: 0.7176471}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 961310569492ba54a9eb1eb9da5dee3f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &311867002
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311866999}
   m_CullTransparentMesh: 1
 --- !u!1 &316057233
 GameObject:
@@ -4501,8 +4829,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 518924480}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &358920803
 GameObject:
   m_ObjectHideFlags: 0
@@ -4649,8 +4981,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 798312851}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &360723457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4758,9 +5094,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384369475}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.043929152, y: 5.6689205, z: -38}
+  m_LocalScale: {x: 0.94382274, y: 0.5128741, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1905878347}
@@ -4782,7 +5118,7 @@ Transform:
   - {fileID: 1958392559}
   - {fileID: 1987911406}
   - {fileID: 617494798}
-  m_Father: {fileID: 641500614}
+  m_Father: {fileID: 413217393}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387832596
@@ -4796,7 +5132,7 @@ GameObject:
   - component: {fileID: 387832598}
   - component: {fileID: 387832597}
   m_Layer: 0
-  m_Name: BrandyCognac
+  m_Name: Alcohol_BrandyCognac
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4946,12 +5282,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413217391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1198, y: -4.39, z: 50}
-  m_LocalScale: {x: 1.1928297, y: 1.1889036, z: 1}
+  m_LocalPosition: {x: 0.04654386, y: -11.053241, z: 38}
+  m_LocalScale: {x: 1.059521, y: 1.9497963, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1061007390}
-  m_RootOrder: 1
+  m_Children:
+  - {fileID: 1449050389}
+  - {fileID: 1778060515}
+  - {fileID: 384369476}
+  - {fileID: 437775925}
+  m_Father: {fileID: 641500614}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &414426254
 GameObject:
@@ -5228,9 +5568,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437775924}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.043929152, y: 5.6689205, z: -38}
+  m_LocalScale: {x: 0.94382274, y: 0.5128741, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1476806480}
@@ -5249,7 +5589,7 @@ Transform:
   - {fileID: 1075552653}
   - {fileID: 175854571}
   - {fileID: 1092261516}
-  m_Father: {fileID: 641500614}
+  m_Father: {fileID: 413217393}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470978063
@@ -5398,8 +5738,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1241668542}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
+--- !u!1 &471203225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471203226}
+  - component: {fileID: 471203228}
+  - component: {fileID: 471203227}
+  m_Layer: 5
+  m_Name: notcheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &471203226
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471203225}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1767383299}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5, y: -1}
+  m_SizeDelta: {x: 424.03, y: 80.7475}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &471203227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471203225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9056604, g: 0, b: 0.12977168, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0611d6270ced03c4280a57ecbbe658a3, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\uC798\uBABB\uB41C \uB808\uC2DC\uD53C \uC7AC\uB8CC\uC785\uB2C8\uB2E4. "
+--- !u!222 &471203228
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471203225}
+  m_CullTransparentMesh: 1
 --- !u!1 &479151105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,8 +6054,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1445255632}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &495540811
 GameObject:
   m_ObjectHideFlags: 0
@@ -5778,8 +6206,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 629907462}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &499365110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5926,8 +6358,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 637210502}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &507146978
 GameObject:
   m_ObjectHideFlags: 0
@@ -6074,8 +6510,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 754455180}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &518924480
 GameObject:
   m_ObjectHideFlags: 0
@@ -6268,8 +6708,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 316057233}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &520210127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6290,7 +6734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0feb7652f8030b744af6410da00abae2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e13c8d3716721246af3b74954291482, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6752,8 +7196,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1844949461}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &542491515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6774,7 +7222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ac459c1aa0211084ebb726ec0162638f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2e65763e9a19a064a8139243301b8f63, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6900,8 +7348,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1414695136}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &544929424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6922,7 +7374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3904cb6cfcc9f594ca4d5f3c517dde2f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9547f8d97cc15d94b94475fb7edaf4fd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7086,8 +7538,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1840626195}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &551053623
 GameObject:
   m_ObjectHideFlags: 0
@@ -7099,7 +7555,7 @@ GameObject:
   - component: {fileID: 551053625}
   - component: {fileID: 551053624}
   m_Layer: 0
-  m_Name: AngosturaBitters
+  m_Name: Alcohol_AngosturaBitters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7486,8 +7942,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1935226257}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &598724283
 GameObject:
   m_ObjectHideFlags: 0
@@ -7702,8 +8162,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 740598446}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &617494797
 GameObject:
   m_ObjectHideFlags: 0
@@ -7799,7 +8263,7 @@ GameObject:
   - component: {fileID: 629412940}
   - component: {fileID: 629412939}
   m_Layer: 0
-  m_Name: BaileysIrishCream
+  m_Name: Alcohol_BaileysIrishCream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8051,7 +8515,7 @@ GameObject:
   - component: {fileID: 637210504}
   - component: {fileID: 637210503}
   m_Layer: 0
-  m_Name: ApplePucker
+  m_Name: Alcohol_ApplePucker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8201,101 +8665,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641500612}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0674, y: 2.3498, z: 2}
+  m_LocalPosition: {x: 0, y: 2, z: 2}
   m_LocalScale: {x: 1.1258199, y: 0.60975784, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1449050389}
-  - {fileID: 1778060515}
-  - {fileID: 384369476}
-  - {fileID: 437775925}
+  - {fileID: 413217393}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &642176157
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 642176158}
-  - component: {fileID: 642176159}
-  m_Layer: 0
-  m_Name: "\uC120\uBC18 (2)"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &642176158
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642176157}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.984247, y: -2.3001907, z: 1.0420678}
-  m_LocalScale: {x: 0.19245121, y: 0.12736, z: 0.1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 207846187}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &642176159
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642176157}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8f96873ad4deb5f40846fb5ff8da4eaa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 20, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &658485012
 GameObject:
   m_ObjectHideFlags: 0
@@ -8393,12 +8770,13 @@ RectTransform:
   - {fileID: 317913346}
   - {fileID: 60218197}
   - {fileID: 661986058}
+  - {fileID: 299561558}
   m_Father: {fileID: 862457113}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6215.4487, y: 0}
+  m_AnchoredPosition: {x: -5868.349, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &658485014
@@ -8587,8 +8965,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 2049378043}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &672369264
 GameObject:
   m_ObjectHideFlags: 0
@@ -9155,8 +9537,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1012374559}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &740598446
 GameObject:
   m_ObjectHideFlags: 0
@@ -9433,8 +9819,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1023364692}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &757641192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9619,8 +10009,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1547215266}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &779334229
 GameObject:
   m_ObjectHideFlags: 0
@@ -9632,7 +10026,7 @@ GameObject:
   - component: {fileID: 779334231}
   - component: {fileID: 779334230}
   m_Layer: 0
-  m_Name: BlueCuracao
+  m_Name: Alcohol_BlueCuracao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9851,8 +10245,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1327045564}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
+--- !u!1 &784587690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 784587692}
+  - component: {fileID: 784587691}
+  m_Layer: 0
+  m_Name: Lime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &784587691
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784587690}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d2d7995bf4eaede458648853ca860c25, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.5, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &784587692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784587690}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.2280297, y: -7.8559732, z: -2}
+  m_LocalScale: {x: 0.17764832, y: 0.32799903, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1778060515}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &786796525
 GameObject:
   m_ObjectHideFlags: 0
@@ -9961,8 +10443,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1579170425}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &786796529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10193,8 +10679,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1327040795}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &836520422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10215,7 +10705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 869f05445fdd87549af2ee687b5b7a54, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 174a001c8bcb52a42b7232b3289d4c8e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10324,90 +10814,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862457112}
   m_CullTransparentMesh: 1
---- !u!1 &876205643
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 876205644}
-  - component: {fileID: 876205645}
-  m_Layer: 0
-  m_Name: "\uC120\uBC18 (1)"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &876205644
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876205643}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.099648, y: -4.6801906, z: 1.0420678}
-  m_LocalScale: {x: 0.61698604, y: 0.12736, z: 0.1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 207846187}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &876205645
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876205643}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8f96873ad4deb5f40846fb5ff8da4eaa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 20, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &905070632
 GameObject:
   m_ObjectHideFlags: 0
@@ -10554,8 +10960,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1704598510}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &907470748
 GameObject:
   m_ObjectHideFlags: 0
@@ -10664,8 +11074,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1958392558}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &907470752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10686,7 +11100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7d905cab3e243c44ca5f317d0415182e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d79a83e7a035cc947ab809202583960c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10850,8 +11264,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 260404896}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &915256862
 GameObject:
   m_ObjectHideFlags: 0
@@ -11128,8 +11546,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 531656756}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &932766971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11150,7 +11572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b13155d8239c44438a358d8e23cfc01, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4592880a690622f4d993f1a22a6c57c7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11193,8 +11615,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933969569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9372196, y: -4.8872557, z: -2}
-  m_LocalScale: {x: 0.4441208, y: 0.81999767, z: 1}
+  m_LocalPosition: {x: 4.44, y: -8.49, z: -6}
+  m_LocalScale: {x: 0.3, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1778060515}
@@ -11289,7 +11711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -73.78296, y: 0}
+  m_AnchoredPosition: {x: -73.7832, y: 0}
   m_SizeDelta: {x: 229.495, y: -9.469}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &948999088
@@ -11451,8 +11873,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1092261514}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &963919589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11637,8 +12063,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 387832596}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &967757559
 GameObject:
   m_ObjectHideFlags: 0
@@ -11785,8 +12215,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1196199005}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &970054669
 GameObject:
   m_ObjectHideFlags: 0
@@ -11895,8 +12329,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1987911405}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &970054673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11917,7 +12355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a337e3befdb086246a5bfb539f6bbc4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6de862c1e7d76334eb3202cb2fdc0101, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12081,8 +12519,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 527468583}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1002560381
 GameObject:
   m_ObjectHideFlags: 0
@@ -12229,8 +12671,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 915256862}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1010416988
 GameObject:
   m_ObjectHideFlags: 0
@@ -12377,8 +12823,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1476806478}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1012374559
 GameObject:
   m_ObjectHideFlags: 0
@@ -12390,7 +12840,7 @@ GameObject:
   - component: {fileID: 1012374561}
   - component: {fileID: 1012374560}
   m_Layer: 0
-  m_Name: ApricotFlavoredBrandy
+  m_Name: Alcohol_ApricotFlavoredBrandy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12540,7 +12990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019464913}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.49134332, y: -7.1336517, z: -2}
+  m_LocalPosition: {x: 0.49134332, y: -8.18, z: -2}
   m_LocalScale: {x: 0.8882416, y: 1.6399953, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12797,7 +13247,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1880141395}
-  - {fileID: 413217393}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12909,8 +13358,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 703607067}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1061204887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12948,6 +13401,86 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061204883}
+  m_CullTransparentMesh: 1
+--- !u!1 &1066179268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1066179269}
+  - component: {fileID: 1066179271}
+  - component: {fileID: 1066179270}
+  m_Layer: 5
+  m_Name: notcheck (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1066179269
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066179268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.666666, y: 13.333332, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 89745373}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 35.560303, y: -24.878784}
+  m_SizeDelta: {x: 135.6162, y: 80.7475}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1066179270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066179268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6886792, g: 0.4793294, b: 0.3729263, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0611d6270ced03c4280a57ecbbe658a3, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\uC870\uC8FC\uD558\uAE30"
+--- !u!222 &1066179271
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066179268}
   m_CullTransparentMesh: 1
 --- !u!1 &1075552651
 GameObject:
@@ -13263,8 +13796,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 281962941}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1092261514
 GameObject:
   m_ObjectHideFlags: 0
@@ -13579,8 +14116,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1721577611}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1142114962
 GameObject:
   m_ObjectHideFlags: 0
@@ -13689,8 +14230,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 632558579}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1142114966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13740,8 +14285,9 @@ GameObject:
   - component: {fileID: 1164475761}
   - component: {fileID: 1164475763}
   - component: {fileID: 1164475762}
+  - component: {fileID: 1164475764}
   m_Layer: 5
-  m_Name: Image
+  m_Name: beforButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13764,8 +14310,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -429, y: -116}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -1377.1613, y: -414.7119}
+  m_SizeDelta: {x: 345.7954, y: 366.3908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1164475762
 MonoBehaviour:
@@ -13805,6 +14351,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164475760}
   m_CullTransparentMesh: 1
+--- !u!114 &1164475764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164475760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1164475762}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1880141396}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: BeforScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1169749068
 GameObject:
   m_ObjectHideFlags: 0
@@ -13951,8 +14553,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 925411439}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1171437576
 GameObject:
   m_ObjectHideFlags: 0
@@ -14099,8 +14705,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 317134702}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1183530778
 GameObject:
   m_ObjectHideFlags: 0
@@ -14209,8 +14819,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 2056787662}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1183530782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14479,8 +15093,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1880050030}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1216410826
 GameObject:
   m_ObjectHideFlags: 0
@@ -14627,8 +15245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1883178230}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1217703206
 GameObject:
   m_ObjectHideFlags: 0
@@ -14943,8 +15565,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 551053623}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1241668542
 GameObject:
   m_ObjectHideFlags: 0
@@ -15137,8 +15763,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1816902703}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1244031170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15575,8 +16205,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 520238489}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1319537919
 GameObject:
   m_ObjectHideFlags: 0
@@ -15723,8 +16357,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 425831495}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1327040795
 GameObject:
   m_ObjectHideFlags: 0
@@ -16253,8 +16891,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 165184711}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1343896291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16275,7 +16917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 90da8bba196eec244ad0d7aa08ea3205, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a63a1d3f46c45e40aaf8890946334fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16306,7 +16948,7 @@ GameObject:
   - component: {fileID: 1344670889}
   - component: {fileID: 1344670891}
   m_Layer: 5
-  m_Name: Timeout
+  m_Name: Timeoutview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16329,8 +16971,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -4.04}
-  m_SizeDelta: {x: 355.1091, y: 364.6201}
+  m_AnchoredPosition: {x: 95.9267, y: -4.5006}
+  m_SizeDelta: {x: 1227.9504, y: 1335.9348}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344670889
 MonoBehaviour:
@@ -16352,7 +16994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b2c3ba0e8cfbf24a833d0562c6cef08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee96e79b45960d646aebc0385ed06431, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16534,8 +17176,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1740422955}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1345778667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16682,8 +17328,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 617494797}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1350674189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16704,7 +17354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 20b5f4dd581096d44adab65ed03b92ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ae005265ffc78c4c9a1247963f58dda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16791,7 +17441,7 @@ RectTransform:
   m_GameObject: {fileID: 1362511414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0.8}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1762587239}
@@ -16799,8 +17449,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.7, y: -14.331177}
-  m_SizeDelta: {x: 87.1122, y: 85.2943}
+  m_AnchoredPosition: {x: 32, y: -8}
+  m_SizeDelta: {x: 92.7674, y: 55.8886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1375941049
 GameObject:
@@ -16994,8 +17644,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 2037435213}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1388169026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17393,9 +18047,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449050388}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.043929152, y: 5.868942, z: -37}
+  m_LocalScale: {x: 0.94382274, y: 0.5128741, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 72100860}
@@ -17441,7 +18095,7 @@ Transform:
   - {fileID: 1840626196}
   - {fileID: 1935226258}
   - {fileID: 1196199006}
-  m_Father: {fileID: 641500614}
+  m_Father: {fileID: 413217393}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467969815
@@ -17552,8 +18206,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1874546518}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1467969819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17784,8 +18442,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1905878346}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1507150369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17806,7 +18468,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8f1a3e4540f20b428bb266a32bdeb74, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28a2bcff8176fb74bb9dfb38ca1c59bb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18021,7 +18683,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533485754
 GameObject:
@@ -18050,7 +18712,7 @@ RectTransform:
   m_GameObject: {fileID: 1533485754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0.8}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1762587239}
@@ -18058,8 +18720,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.9, y: -16}
-  m_SizeDelta: {x: 87.1122, y: 85.2943}
+  m_AnchoredPosition: {x: -53.832466, y: -9.093506}
+  m_SizeDelta: {x: 92.7674, y: 55.8886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533485756
 MonoBehaviour:
@@ -18172,7 +18834,7 @@ RectTransform:
   m_GameObject: {fileID: 1537864578}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0.8}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1762587239}
@@ -18180,8 +18842,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.700012, y: -14.331177}
-  m_SizeDelta: {x: 87.1122, y: 85.2943}
+  m_AnchoredPosition: {x: -34.45098, y: -7.9999847}
+  m_SizeDelta: {x: 92.7674, y: 55.8886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1544735963
 GameObject:
@@ -18329,8 +18991,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1898344923}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1547215266
 GameObject:
   m_ObjectHideFlags: 0
@@ -18342,7 +19008,7 @@ GameObject:
   - component: {fileID: 1547215268}
   - component: {fileID: 1547215267}
   m_Layer: 0
-  m_Name: BenedictineDOM
+  m_Name: Alcohol_BenedictineDOM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18561,8 +19227,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 629412938}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1578998634
 GameObject:
   m_ObjectHideFlags: 0
@@ -18709,8 +19379,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1217703206}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1579170425
 GameObject:
   m_ObjectHideFlags: 0
@@ -18795,90 +19469,6 @@ Transform:
   m_Father: {fileID: 437775925}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25.662}
---- !u!1 &1582739243
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1582739244}
-  - component: {fileID: 1582739245}
-  m_Layer: 0
-  m_Name: "\uC120\uBC18 (3)"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1582739244
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582739243}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.311147, y: -4.6801906, z: 1.0420678}
-  m_LocalScale: {x: 0.25975138, y: 0.12736, z: 0.1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 207846187}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1582739245
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582739243}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8f96873ad4deb5f40846fb5ff8da4eaa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 20, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1585955810
 GameObject:
   m_ObjectHideFlags: 0
@@ -19025,8 +19615,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1272216160}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1590005638
 GameObject:
   m_ObjectHideFlags: 0
@@ -19038,7 +19632,7 @@ GameObject:
   - component: {fileID: 1590005640}
   - component: {fileID: 1590005639}
   m_Layer: 0
-  m_Name: CALVADOS
+  m_Name: Alcohol_CALVADOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19257,8 +19851,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1931471555}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1611806330
 GameObject:
   m_ObjectHideFlags: 0
@@ -19272,7 +19870,7 @@ GameObject:
   - component: {fileID: 1611806333}
   - component: {fileID: 1611806332}
   m_Layer: 5
-  m_Name: Scroll View (1)
+  m_Name: Cupboard Scroll View DOWN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19287,7 +19885,7 @@ RectTransform:
   m_GameObject: {fileID: 1611806330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 948999087}
@@ -19296,8 +19894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.0000305, y: 22}
-  m_SizeDelta: {x: 2481.4841, y: 405.494}
+  m_AnchoredPosition: {x: -34.5471, y: 67}
+  m_SizeDelta: {x: 2263.0583, y: 329.7818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611806332
 MonoBehaviour:
@@ -19513,8 +20111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1524726205}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1645351844
 GameObject:
   m_ObjectHideFlags: 0
@@ -19791,8 +20393,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 175854569}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1678802733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19977,8 +20583,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 2092465788}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1686228396
 GameObject:
   m_ObjectHideFlags: 0
@@ -20125,8 +20735,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 285701527}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1697478098
 GameObject:
   m_ObjectHideFlags: 0
@@ -20357,8 +20971,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1340882004}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1704598510
 GameObject:
   m_ObjectHideFlags: 0
@@ -20551,8 +21169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1075552651}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1706778164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20821,8 +21443,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 933969569}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1740422955
 GameObject:
   m_ObjectHideFlags: 0
@@ -21053,8 +21679,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 684806620}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1762587238
 GameObject:
   m_ObjectHideFlags: 0
@@ -21067,7 +21697,7 @@ GameObject:
   - component: {fileID: 1762587241}
   - component: {fileID: 1762587240}
   m_Layer: 5
-  m_Name: timebar
+  m_Name: Timebar 2MIN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21080,21 +21710,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762587238}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.15, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1537864581}
   - {fileID: 1362511417}
   - {fileID: 1533485755}
-  m_Father: {fileID: 1880141395}
-  m_RootOrder: 2
+  m_Father: {fileID: 311867000}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -405.9137, y: 170.51126}
-  m_SizeDelta: {x: 360.0371, y: 411.4367}
+  m_AnchoredPosition: {x: 3.9257812, y: 11.75647}
+  m_SizeDelta: {x: 371.6772, y: 169.2419}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762587240
 MonoBehaviour:
@@ -21109,14 +21739,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6712897a2daf38428a9456f33fa0ffe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 961310569492ba54a9eb1eb9da5dee3f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21133,6 +21763,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762587238}
+  m_CullTransparentMesh: 1
+--- !u!1 &1767383298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1767383299}
+  - component: {fileID: 1767383301}
+  - component: {fileID: 1767383300}
+  m_Layer: 5
+  m_Name: notcheckbar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1767383299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767383298}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 471203226}
+  m_Father: {fileID: 1880141395}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 529.1, y: 366.4112}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1767383300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767383298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5254902}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 961310569492ba54a9eb1eb9da5dee3f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1767383301
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767383298}
   m_CullTransparentMesh: 1
 --- !u!1 &1778060514
 GameObject:
@@ -21157,9 +21864,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778060514}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.043929152, y: 5.1560464, z: -38}
+  m_LocalScale: {x: 0.94382274, y: 0.5128741, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 425831496}
@@ -21186,7 +21893,8 @@ Transform:
   - {fileID: 294601120}
   - {fileID: 1272216161}
   - {fileID: 933969570}
-  m_Father: {fileID: 641500614}
+  - {fileID: 784587692}
+  m_Father: {fileID: 413217393}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1783630101
@@ -21297,8 +22005,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1332492084}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1783630105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21483,8 +22195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 704163688}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1808258990
 GameObject:
   m_ObjectHideFlags: 0
@@ -21631,8 +22347,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1590005638}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1810289260
 GameObject:
   m_ObjectHideFlags: 0
@@ -21779,8 +22499,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1394254016}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1810316154
 GameObject:
   m_ObjectHideFlags: 0
@@ -21927,8 +22651,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1650818708}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1815388694
 GameObject:
   m_ObjectHideFlags: 0
@@ -22075,8 +22803,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 41548469}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1816902703
 GameObject:
   m_ObjectHideFlags: 0
@@ -22391,8 +23123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1076771844}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1840626195
 GameObject:
   m_ObjectHideFlags: 0
@@ -22775,7 +23511,7 @@ MonoBehaviour:
   - {fileID: 2050840792}
   - {fileID: 1611806330}
   - {fileID: 89745372}
-  - {fileID: 1762587238}
+  - {fileID: 311866999}
 --- !u!114 &1880141392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22851,11 +23587,12 @@ RectTransform:
   m_Children:
   - {fileID: 2050840793}
   - {fileID: 1611806331}
-  - {fileID: 1762587239}
+  - {fileID: 311867000}
   - {fileID: 1344670888}
   - {fileID: 89745373}
   - {fileID: 98682747}
   - {fileID: 1164475761}
+  - {fileID: 1767383299}
   m_Father: {fileID: 1061007390}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22888,110 +23625,114 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 1767383298}
   cocktailingredientslObject: {fileID: 1533484737}
-  liquid:
-  - {fileID: 72100858}
-  - {fileID: 551053623}
-  - {fileID: 637210502}
-  - {fileID: 1012374559}
-  - {fileID: 260404896}
-  - {fileID: 629412938}
-  - {fileID: 1547215266}
-  - {fileID: 779334229}
-  - {fileID: 285701527}
+  AlcoholObject:
+  - {fileID: 1898344923}
+  - {fileID: 672369264}
+  - {fileID: 1217703206}
   - {fileID: 387832596}
   - {fileID: 1590005638}
-  - {fileID: 2092465788}
-  - {fileID: 1394254016}
-  - {fileID: 1650818708}
-  - {fileID: 684806620}
-  - {fileID: 541194646}
-  - {fileID: 1076771844}
-  - {fileID: 1038021654}
-  - {fileID: 1883178230}
-  - {fileID: 727284421}
-  - {fileID: 165583467}
   - {fileID: 41548469}
+  - {fileID: 2004590333}
+  - {fileID: 260404896}
+  - {fileID: 285701527}
+  - {fileID: 1704598510}
+  - {fileID: 1883178230}
+  - {fileID: 1038021654}
+  - {fileID: 165583467}
+  - {fileID: 317134702}
+  - {fileID: 925411439}
+  - {fileID: 1076771844}
+  - {fileID: 1935226257}
+  - {fileID: 1241668542}
+  - {fileID: 727284421}
+  - {fileID: 428358038}
+  - {fileID: 629412938}
+  - {fileID: 1880050030}
+  - {fileID: 541194646}
+  - {fileID: 1196199005}
+  - {fileID: 754455180}
+  - {fileID: 637210502}
+  - {fileID: 2092465788}
+  - {fileID: 684806620}
+  - {fileID: 1012374559}
+  - {fileID: 1547215266}
+  - {fileID: 779334229}
+  - {fileID: 1840626195}
+  - {fileID: 551053623}
+  - {fileID: 1650818708}
+  - {fileID: 134900308}
   - {fileID: 915256862}
   - {fileID: 1019464913}
-  - {fileID: 1519006925}
-  - {fileID: 672369264}
-  - {fileID: 1880050030}
+  - {fileID: 72100858}
   - {fileID: 479151105}
-  - {fileID: 925411439}
-  - {fileID: 428358038}
-  - {fileID: 754455180}
-  - {fileID: 2004590333}
-  - {fileID: 1340882004}
-  - {fileID: 1704598510}
-  - {fileID: 134900308}
+  - {fileID: 1519006925}
   - {fileID: 1343034432}
-  - {fileID: 317134702}
-  - {fileID: 1217703206}
-  - {fileID: 1898344923}
-  - {fileID: 1840626195}
-  - {fileID: 1935226257}
-  - {fileID: 1196199005}
-  - {fileID: 425831495}
-  - {fileID: 1218189432}
-  - {fileID: 1292784259}
-  - {fileID: 1445255632}
-  - {fileID: 1524726205}
-  - {fileID: 414426254}
-  - {fileID: 527468583}
-  - {fileID: 1931471555}
-  - {fileID: 2049378043}
-  - {fileID: 1327045564}
-  - {fileID: 704163688}
-  - {fileID: 704163688}
-  - {fileID: 740598446}
-  - {fileID: 590534443}
-  - {fileID: 1291148893}
+  - {fileID: 1394254016}
+  - {fileID: 1340882004}
+  NonAlcoholObject:
   - {fileID: 798312851}
+  - {fileID: 1524726205}
+  - {fileID: 590534443}
+  - {fileID: 2049378043}
+  - {fileID: 414426254}
+  - {fileID: 1931471555}
+  - {fileID: 1445255632}
   - {fileID: 1721577611}
-  - {fileID: 518924480}
-  - {fileID: 281962941}
-  - {fileID: 2074500335}
-  - {fileID: 629907462}
-  - {fileID: 520238489}
-  - {fileID: 294601119}
+  - {fileID: 1218189432}
+  - {fileID: 527468583}
+  - {fileID: 1327045564}
   - {fileID: 1272216160}
+  - {fileID: 704163688}
+  - {fileID: 425831495}
+  - {fileID: 740598446}
+  - {fileID: 1292784259}
+  - {fileID: 1291148893}
+  - {fileID: 294601119}
   - {fileID: 933969569}
-  - {fileID: 1905878346}
-  - {fileID: 1697478098}
-  - {fileID: 1122545968}
-  - {fileID: 153995093}
-  - {fileID: 360723457}
-  - {fileID: 316057233}
-  - {fileID: 1375941049}
-  - {fileID: 531656756}
-  - {fileID: 1327040795}
-  - {fileID: 1414695136}
-  - {fileID: 165184711}
-  - {fileID: 1844949461}
-  - {fileID: 1401490218}
-  - {fileID: 1921382998}
-  - {fileID: 1821444959}
+  - {fileID: 629907462}
+  - {fileID: 281962941}
+  - {fileID: 520238489}
+  - {fileID: 2074500335}
+  - {fileID: 518924480}
+  CocktaillGlassObject:
+  - {fileID: 1987911405}
   - {fileID: 105320686}
   - {fileID: 1958392558}
-  - {fileID: 1987911405}
   - {fileID: 617494797}
-  - {fileID: 1476806478}
-  - {fileID: 1645351844}
-  - {fileID: 1740422955}
+  - {fileID: 1905878346}
+  - {fileID: 316057233}
+  - {fileID: 360723457}
+  - {fileID: 1375941049}
+  - {fileID: 1844949461}
+  - {fileID: 1821444959}
+  - {fileID: 165184711}
+  - {fileID: 153995093}
+  - {fileID: 1122545968}
+  - {fileID: 1697478098}
+  - {fileID: 1401490218}
+  - {fileID: 1921382998}
+  - {fileID: 1327040795}
+  - {fileID: 531656756}
+  - {fileID: 1414695136}
+  ToolObject:
   - {fileID: 1332492084}
+  - {fileID: 175854569}
+  - {fileID: 1023364692}
+  - {fileID: 1075552651}
+  - {fileID: 2037435213}
+  - {fileID: 1645351844}
+  - {fileID: 1476806478}
+  - {fileID: 1740422955}
+  - {fileID: 1816902703}
+  - {fileID: 561358777}
+  - {fileID: 703607067}
+  - {fileID: 1579170425}
+  - {fileID: 1874546518}
+  - {fileID: 1092261514}
   - {fileID: 2056787662}
   - {fileID: 632558579}
-  - {fileID: 703607067}
-  - {fileID: 1874546518}
-  - {fileID: 1579170425}
-  - {fileID: 561358777}
-  - {fileID: 1023364692}
-  - {fileID: 1816902703}
-  - {fileID: 2037435213}
-  - {fileID: 1075552651}
-  - {fileID: 175854569}
-  - {fileID: 1092261514}
 --- !u!1 &1880892487
 GameObject:
   m_ObjectHideFlags: 0
@@ -23138,8 +23879,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1519006925}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1883178230
 GameObject:
   m_ObjectHideFlags: 0
@@ -23308,90 +24053,6 @@ Transform:
   m_Father: {fileID: 1449050389}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1904251581
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1904251582}
-  - component: {fileID: 1904251583}
-  m_Layer: 0
-  m_Name: "\uC120\uBC18"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1904251582
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904251581}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.099648, y: -2.2501907, z: 1.0420678}
-  m_LocalScale: {x: 0.61698604, y: 0.12736, z: 0.1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 207846187}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1904251583
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904251581}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8f96873ad4deb5f40846fb5ff8da4eaa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 20, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1905878346
 GameObject:
   m_ObjectHideFlags: 0
@@ -23622,8 +24283,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 72100858}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1921295567
 GameObject:
   m_ObjectHideFlags: 0
@@ -23770,8 +24435,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 672369264}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &1921382998
 GameObject:
   m_ObjectHideFlags: 0
@@ -24048,8 +24717,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1375941049}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1934653448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24070,7 +24743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6213bfd1547cc9046bce3629e1ae6a88, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38cb0584df2187b4facf6ece2a330498, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24280,8 +24953,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1401490218}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1939148234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24302,7 +24979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 15a300f150d7d5244a2e9ead820f9d7b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33dee98c68c46a24abd6bb892cd72057, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24474,7 +25151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1080.088, y: 0}
+  m_AnchoredPosition: {x: -0.00095195073, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1961041255
@@ -24544,7 +25221,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984827791}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24625,8 +25302,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 360723457}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!114 &1984827795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24647,7 +25328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db610e6f4606dd54bbbfacf8736b78da, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a36fdb9a9b1c2744cab68a4a19cf10df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24979,8 +25660,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 779334229}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &2037435213
 GameObject:
   m_ObjectHideFlags: 0
@@ -25162,7 +25847,7 @@ GameObject:
   - component: {fileID: 2050840795}
   - component: {fileID: 2050840794}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Cupboard Scroll View UP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25177,7 +25862,7 @@ RectTransform:
   m_GameObject: {fileID: 2050840792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 862457113}
@@ -25186,8 +25871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.8116, y: 122.27}
-  m_SizeDelta: {x: 2269.977, y: 373.33}
+  m_AnchoredPosition: {x: -3.9441, y: 419}
+  m_SizeDelta: {x: 2519.5398, y: 330.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2050840794
 MonoBehaviour:
@@ -25571,8 +26256,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 590534443}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &2078253572
 GameObject:
   m_ObjectHideFlags: 0
@@ -25719,8 +26408,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1218189432}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &2092465788
 GameObject:
   m_ObjectHideFlags: 0
@@ -25951,8 +26644,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 165583467}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &2108674609
 GameObject:
   m_ObjectHideFlags: 0
@@ -26099,8 +26796,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 727284421}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &2118739655
 GameObject:
   m_ObjectHideFlags: 0
@@ -26247,8 +26948,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 428358038}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
 --- !u!1 &2120251023
 GameObject:
   m_ObjectHideFlags: 0
@@ -26395,5 +27100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4317b254d020ef4690db1dc3193f989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notcheck: {fileID: 0}
   cocktailingredientslObject: {fileID: 1292784259}
-  liquid: []
+  AlcoholObject: []
+  NonAlcoholObject: []
+  CocktaillGlassObject: []
+  ToolObject: []
