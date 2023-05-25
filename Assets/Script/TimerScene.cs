@@ -12,11 +12,11 @@ public class TimerScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerText = GetComponent<Text>(); // 자신의 UI Text 오브젝트를 참조합니다.
-        float savedTime = PlayerPrefs.GetFloat("Time"); // 저장된 타이머 값을 불러옵니다.
+        timerText = GetComponent<Text>(); // 자신의 UI Text 오브젝트를 참조
+        float savedTime = PlayerPrefs.GetFloat("Time"); // 저장된 타이머 값을 불러오기
         if (savedTime > 0)
         {
-            timer.timeLeft = savedTime; // 불러온 타이머 값을 사용합니다.
+            timer.timeLeft = savedTime; // 불러온 타이머 값을 사용
         }
     }
 
@@ -26,13 +26,13 @@ public class TimerScene : MonoBehaviour
     {
         if (timer.timeLeft > 0)
         {
-            timer.timeLeft -= Time.deltaTime; // 타이머 값을 감소시킵니다.
+            timer.timeLeft -= Time.deltaTime; // 타이머 값을 감소
         }
-        minutes = Mathf.FloorToInt(timer.timeLeft/ 60.0f); // 분을 계산합니다.
-        seconds = Mathf.FloorToInt(timer.timeLeft % 60.0f); // 초를 계산합니다.
+        minutes = Mathf.FloorToInt(timer.timeLeft/ 60.0f); // 분을 계산
+        seconds = Mathf.FloorToInt(timer.timeLeft % 60.0f); // 초를 계산
         if (timer != null)
         {
-            timerText.text = "Time: " + string.Format("{0:00}:{1:00}", minutes, seconds); ; // 타이머 값을 UI Text에 표시합니다.
+            timerText.text = "Time: " + string.Format("{0:00}:{1:00}", minutes, seconds); ; // 타이머 값을 UI Text에 표시
         }
         PlayerPrefs.SetFloat("Time",timer.timeLeft);
      

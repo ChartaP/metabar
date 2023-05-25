@@ -25,5 +25,9 @@ public class buttonctrl2 : MonoBehaviour
         PlayerPrefs.SetString("TextData", inputtext.text);
         SceneManager.LoadScene(2);
     }
+    public void Cocktailname(string name)
+    {
+        
+    }
 
 }

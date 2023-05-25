@@ -9,10 +9,10 @@ public class Restartbutton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float savedTime = PlayerPrefs.GetFloat("Time"); // 저장된 타이머 값을 불러옵니다.
+        float savedTime = PlayerPrefs.GetFloat("Time"); // 저장된 타이머 값을 불러오기.
         if (savedTime > 0)
         {
-            timer.timeLeft = savedTime; // 불러온 타이머 값을 사용합니다.
+            timer.timeLeft = savedTime; // 불러온 타이머 값 사용.
         }
     }
 

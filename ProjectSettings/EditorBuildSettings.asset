@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype/ExampleScene.unity
     guid: 99a4b51b7e6eb3048b34235d40f5e5fa
+  - enabled: 1
+    path: Assets/Scenes/Prototype/FailScene.unity
+    guid: 3915e2da62569014c8ff95e81f5e1c06
+  - enabled: 1
+    path: Assets/Scenes/Prototype/SuccessScene.unity
+    guid: 1e0bd4832fb53c54ca9be955912a9f09
   m_configObjects: {}
