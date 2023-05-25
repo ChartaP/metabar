@@ -287,10 +287,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &41548469
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,10 +535,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &60218196
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,10 +699,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &72100858
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,10 +985,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &78404530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1299,10 +1283,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &90260778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,10 +1447,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &95954571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,10 +1866,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &115212130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,10 +1992,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &115212134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2226,10 +2194,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &134900308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,10 +2442,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &153995093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,10 +2690,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &165184711
 GameObject:
   m_ObjectHideFlags: 0
@@ -3066,10 +3022,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &175854569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3280,10 +3232,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &195125386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3448,10 +3396,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &201123907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3654,10 +3598,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &246379689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,10 +3724,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &246379693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4074,10 +4010,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &281962941
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,10 +4320,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &299561560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4662,10 +4590,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &308100783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4792,10 +4716,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &308100787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5243,10 +5163,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &328555291
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,10 +5403,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &360723457
 GameObject:
   m_ObjectHideFlags: 0
@@ -6731,10 +6643,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &471203225
 GameObject:
   m_ObjectHideFlags: 0
@@ -7063,10 +6971,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &495540811
 GameObject:
   m_ObjectHideFlags: 0
@@ -7231,10 +7135,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &499365110
 GameObject:
   m_ObjectHideFlags: 0
@@ -7399,10 +7299,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &507146978
 GameObject:
   m_ObjectHideFlags: 0
@@ -7567,10 +7463,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &518924480
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,10 +7673,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &520210127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8285,10 +8173,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &542491515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8453,10 +8337,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &544929424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8659,10 +8539,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &551053623
 GameObject:
   m_ObjectHideFlags: 0
@@ -9079,10 +8955,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &598724283
 GameObject:
   m_ObjectHideFlags: 0
@@ -9315,10 +9187,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &614079196
 GameObject:
   m_ObjectHideFlags: 0
@@ -10210,10 +10078,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &672369264
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,10 +10738,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &740598446
 GameObject:
   m_ObjectHideFlags: 0
@@ -11172,10 +11032,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &757641192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11378,10 +11234,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &772914454
 GameObject:
   m_ObjectHideFlags: 0
@@ -11706,10 +11558,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &784587690
 GameObject:
   m_ObjectHideFlags: 0
@@ -11920,10 +11768,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &786796529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12172,10 +12016,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &836520422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12545,10 +12385,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &907470748
 GameObject:
   m_ObjectHideFlags: 0
@@ -12675,10 +12511,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &907470752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12881,10 +12713,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &915256862
 GameObject:
   m_ObjectHideFlags: 0
@@ -13179,10 +13007,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &932766971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13522,10 +13346,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &963919589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13728,10 +13548,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &967757559
 GameObject:
   m_ObjectHideFlags: 0
@@ -13896,10 +13712,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &970054669
 GameObject:
   m_ObjectHideFlags: 0
@@ -14026,10 +13838,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &970054673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14232,10 +14040,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1002560381
 GameObject:
   m_ObjectHideFlags: 0
@@ -14400,10 +14204,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1010416988
 GameObject:
   m_ObjectHideFlags: 0
@@ -14568,10 +14368,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1012374559
 GameObject:
   m_ObjectHideFlags: 0
@@ -15119,10 +14915,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1061204887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15573,10 +15365,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1092261514
 GameObject:
   m_ObjectHideFlags: 0
@@ -15909,10 +15697,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1142114962
 GameObject:
   m_ObjectHideFlags: 0
@@ -16039,10 +15823,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1142114966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16378,10 +16158,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1171437576
 GameObject:
   m_ObjectHideFlags: 0
@@ -16546,10 +16322,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1183530778
 GameObject:
   m_ObjectHideFlags: 0
@@ -16676,10 +16448,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1183530782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17042,10 +16810,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1216410826
 GameObject:
   m_ObjectHideFlags: 0
@@ -17210,10 +16974,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1217703206
 GameObject:
   m_ObjectHideFlags: 0
@@ -17546,10 +17306,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1241668542
 GameObject:
   m_ObjectHideFlags: 0
@@ -17760,10 +17516,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1244031170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18370,10 +18122,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1319537919
 GameObject:
   m_ObjectHideFlags: 0
@@ -18538,10 +18286,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1327040795
 GameObject:
   m_ObjectHideFlags: 0
@@ -19088,10 +18832,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1343896291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19389,10 +19129,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1345778667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19557,10 +19293,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1350674189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19889,10 +19621,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1388169026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20467,10 +20195,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1467969819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20951,10 +20675,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1507150369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21516,10 +21236,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1547215266
 GameObject:
   m_ObjectHideFlags: 0
@@ -21768,10 +21484,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1558874915
 GameObject:
   m_ObjectHideFlags: 0
@@ -22012,10 +21724,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1579170425
 GameObject:
   m_ObjectHideFlags: 0
@@ -22264,10 +21972,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1590005638
 GameObject:
   m_ObjectHideFlags: 0
@@ -22516,10 +22220,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1611806330
 GameObject:
   m_ObjectHideFlags: 0
@@ -22792,10 +22492,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1645351844
 GameObject:
   m_ObjectHideFlags: 0
@@ -23166,10 +22862,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1678802733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23372,10 +23064,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1686228396
 GameObject:
   m_ObjectHideFlags: 0
@@ -23540,10 +23228,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1697478098
 GameObject:
   m_ObjectHideFlags: 0
@@ -23792,10 +23476,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1704598510
 GameObject:
   m_ObjectHideFlags: 0
@@ -24006,10 +23686,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1706778164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24452,10 +24128,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1740422955
 GameObject:
   m_ObjectHideFlags: 0
@@ -24704,10 +24376,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1762587238
 GameObject:
   m_ObjectHideFlags: 0
@@ -25122,10 +24790,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1783630105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25328,10 +24992,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1808258990
 GameObject:
   m_ObjectHideFlags: 0
@@ -25496,10 +25156,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1810289260
 GameObject:
   m_ObjectHideFlags: 0
@@ -25664,10 +25320,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1810316154
 GameObject:
   m_ObjectHideFlags: 0
@@ -25832,10 +25484,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1815388694
 GameObject:
   m_ObjectHideFlags: 0
@@ -26000,10 +25648,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1816902703
 GameObject:
   m_ObjectHideFlags: 0
@@ -26336,10 +25980,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1840626195
 GameObject:
   m_ObjectHideFlags: 0
@@ -26790,7 +26430,7 @@ MonoBehaviour:
   timeText:
   - {fileID: 1537864579}
   - {fileID: 1362511415}
-  time: 10
+  time: 120
   gameout: {fileID: 1344670887}
   menue:
   - {fileID: 98682746}
@@ -27024,10 +26664,6 @@ MonoBehaviour:
   - {fileID: 1092261514}
   - {fileID: 2056787662}
   - {fileID: 632558579}
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!82 &1880141398
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27288,10 +26924,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1883178230
 GameObject:
   m_ObjectHideFlags: 0
@@ -27708,10 +27340,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1921295567
 GameObject:
   m_ObjectHideFlags: 0
@@ -27876,10 +27504,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &1921382998
 GameObject:
   m_ObjectHideFlags: 0
@@ -28470,10 +28094,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1934653448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28722,10 +28342,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1939148234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29087,10 +28703,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!114 &1984827795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29461,10 +29073,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &2037435213
 GameObject:
   m_ObjectHideFlags: 0
@@ -30073,10 +29681,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &2078253572
 GameObject:
   m_ObjectHideFlags: 0
@@ -30241,10 +29845,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &2092465788
 GameObject:
   m_ObjectHideFlags: 0
@@ -30493,10 +30093,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &2108674609
 GameObject:
   m_ObjectHideFlags: 0
@@ -30661,10 +30257,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &2118739655
 GameObject:
   m_ObjectHideFlags: 0
@@ -30829,10 +30421,6 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
 --- !u!1 &2120251023
 GameObject:
   m_ObjectHideFlags: 0
@@ -30997,7 +30585,3 @@ MonoBehaviour:
   NonAlcoholObject: []
   CocktaillGlassObject: []
   ToolObject: []
-  cocktailMnum: 0
-  cocktailMnum2: 0
-  cocktailMnum3: 0
-  cocktailMnum4: 0
