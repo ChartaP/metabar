@@ -52,12 +52,15 @@ public class PouringSceneMng : MonoBehaviour
 
     void Load()
     {
-        int loadVessel = PlayerPrefs.GetInt("VesselName");
+        int vesselid = PlayerPrefs.GetInt("CoasterGlassID");
+        int loadVessel = PlayerPrefs.GetInt(vesselid+"VesselName");
+        Debug.Log(loadVessel);
         vesselObject = Instantiate(vesselPrefabs[loadVessel], vesselPoint);
+        vesselObject.GetComponent<Glass>().SetID(vesselid);
     }
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Load();
     }

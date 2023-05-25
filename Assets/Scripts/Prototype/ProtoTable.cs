@@ -31,7 +31,7 @@ public class ProtoTable : MonoBehaviour
     private ToolName[] preTools;
 
     [SerializeField]
-    private GlassName preGlass;
+    private GlassName[] preGlasses;
 
     [SerializeField]
     private DrinkName[] preDrinks;
@@ -80,7 +80,15 @@ public class ProtoTable : MonoBehaviour
 
     private void GlassSet()
     {
-        Instantiate(this.glasses[(char)preGlass], glassPos[0], Quaternion.identity, transform);
+        Vector3 pos = transform.position;
+        int i = 0;
+        foreach (GlassName glassID in preGlasses)
+        {
+            pos = glassPos[i];
+            Instantiate(this.glasses[(char)glassID], pos, Quaternion.identity, transform).GetComponent<Glass>().SetID(i);
+            i++;
+
+        }
     }
 
     private void AlcoholSet()

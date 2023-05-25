@@ -16,6 +16,8 @@ public enum TableObjectType
 public class TableObject : ProtoClickObject
 {
     [SerializeField]
+    protected Vector3 posOrgn = Vector3.zero;
+    [SerializeField]
     protected Vector2 firstPoint = Vector2.zero;
     [SerializeField]
     protected Vector2 lastPoint = Vector2.zero;
@@ -91,7 +93,7 @@ public class TableObject : ProtoClickObject
 
     protected IEnumerator Dragging()
     {
-        Vector3 posOrgn = transform.localPosition;
+        posOrgn = transform.localPosition;
         firstPoint = GetMousePosition();
 
         while (true)

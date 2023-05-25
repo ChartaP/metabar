@@ -17,4 +17,15 @@ public class TableGlass : TableObject
         base.OnClick();
 
     }
+
+    protected override void OnDrop()
+    {
+        base.OnDrop();
+        if (IsInColObjByTag("Coaster"))
+        {
+            TableCoaster coaster = FindObjByTagFromColObj("Coaster").GetComponent<TableCoaster>();
+            coaster.GlassPlace(gameObject);
+            posOrgn = coaster.GlassPos;
+        }
+    }
 }

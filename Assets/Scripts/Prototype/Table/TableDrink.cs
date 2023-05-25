@@ -48,8 +48,7 @@ public class TableDrink : TableObject
     {
         foreach(GameObject obj in colObjects)
         {
-            TableObjectType type = obj.GetComponent<TableObject>().Type;
-            if(type == TableObjectType.Glass)
+            if(obj.tag == "Glass")
             {
                 return true;
             }

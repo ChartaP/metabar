@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7082938622147523698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.22, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -185,18 +185,18 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.82926023, y: 0.96660465}
-  - {x: 0.7960101, y: -1.0714291}
-  - {x: 0.47835454, y: -1.2148525}
-  - {x: -0.29147103, y: -1.2337153}
-  - {x: -0.78502923, y: -1.1265087}
-  - {x: -0.82516813, y: 0.93611753}
-  - {x: -0.6865093, y: 0.8845026}
-  - {x: -0.64262724, y: -1.0174679}
-  - {x: 0.06740832, y: -1.0436854}
-  - {x: 0.5921805, y: -0.99718225}
-  - {x: 0.7210016, y: 0.90964663}
-  - {x: 0.8292479, y: 0.9673515}
+  - {x: 0.83747435, y: 2.3958771}
+  - {x: 0.8042242, y: 0.43177128}
+  - {x: 0.34692714, y: 0.18977737}
+  - {x: -0.29147103, y: 0.20377135}
+  - {x: -0.81788605, y: 0.30276394}
+  - {x: -0.86623913, y: 2.4228897}
+  - {x: -0.69472355, y: 2.2809184}
+  - {x: -0.69191253, y: 0.78965855}
+  - {x: -0.1133043, y: 0.6155851}
+  - {x: 0.66610837, y: 0.7606586}
+  - {x: 0.7210016, y: 2.37999}
+  - {x: 0.82924783, y: 2.4048386}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -228,8 +228,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7696775403001461948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0095, y: 0.449, z: 0}
-  m_LocalScale: {x: 2.9654438, y: 2.9374175, z: 1}
+  m_LocalPosition: {x: 0.0095, y: 1.9029, z: 0}
+  m_LocalScale: {x: 2.9654438, y: 2.9509706, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7696775404319808968}
@@ -300,10 +300,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.59, y: 1.8}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
@@ -380,6 +380,7 @@ MonoBehaviour:
   capacity: 50
   isIce: 0
   glassName: 2
+  id: -1
 --- !u!114 &7696775404319808975
 MonoBehaviour:
   m_ObjectHideFlags: 0

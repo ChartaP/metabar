@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7082938622147523698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.22, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7696775404319808968}
@@ -185,18 +185,18 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.6288751, y: 1.5276833}
-  - {x: 0.37119338, y: 0.3312676}
-  - {x: 0.17376897, y: 0.1317364}
-  - {x: -0.0991012, y: 0.10485804}
-  - {x: -0.35219708, y: 0.30824935}
-  - {x: -0.568675, y: 1.5613196}
-  - {x: -0.4380316, y: 1.3493965}
-  - {x: -0.22582597, y: 0.35316706}
-  - {x: -0.020761192, y: 0.2548108}
-  - {x: 0.26354873, y: 0.3333758}
-  - {x: 0.54466265, y: 1.5108024}
-  - {x: 0.6208472, y: 1.5204148}
+  - {x: 0.5886212, y: 3.144546}
+  - {x: 0.35106644, y: 1.8810407}
+  - {x: 0.05971639, y: 1.7150544}
+  - {x: -0.17960888, y: 1.7686837}
+  - {x: -0.33877915, y: 1.9385303}
+  - {x: -0.58880186, y: 3.1983094}
+  - {x: -0.51183033, y: 3.1675286}
+  - {x: -0.2593708, y: 1.9901569}
+  - {x: -0.02747016, y: 1.8649648}
+  - {x: 0.27025768, y: 1.9502387}
+  - {x: 0.49099082, y: 3.16121}
+  - {x: 0.6007204, y: 3.1506953}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -228,8 +228,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7696775403001461948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0507, y: 0.9098, z: 0}
-  m_LocalScale: {x: 3.1165853, y: 3.0500371, z: 1}
+  m_LocalPosition: {x: 0.0507, y: 3.8483, z: 0}
+  m_LocalScale: {x: 3.1165853, y: 3.0026736, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7696775404319808968}
@@ -300,10 +300,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.65}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.16, y: 1.28}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
@@ -380,6 +380,7 @@ MonoBehaviour:
   capacity: 55
   isIce: 0
   glassName: 8
+  id: -1
 --- !u!114 &7696775404319808975
 MonoBehaviour:
   m_ObjectHideFlags: 0

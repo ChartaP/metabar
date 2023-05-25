@@ -51,6 +51,19 @@ public class Glass : MonoBehaviour
     [SerializeField]
     protected GlassName glassName = GlassName.Straight;
 
+    [SerializeField]
+    protected int id = -1;
+
+    public void SetID(int id)
+    {
+        this.id = id;
+    }
+
+    public int getID()
+    {
+        return id;
+    }
+
     public float Amount
     {
         get
@@ -106,7 +119,7 @@ public class Glass : MonoBehaviour
     {
         try
         {
-            int a = PlayerPrefs.GetInt("GlassIce");
+            int a = PlayerPrefs.GetInt(id+"GlassIce");
             if (a == 1) {
                 SetIce(true);
             }
@@ -115,7 +128,7 @@ public class Glass : MonoBehaviour
                 SetIce(false);
             }
             liquidList.Clear();
-            int count = PlayerPrefs.GetInt("LiquidCount");
+            int count = PlayerPrefs.GetInt(id + "LiquidCount");
 
             float amount;
             float weight;
@@ -126,17 +139,17 @@ public class Glass : MonoBehaviour
             for (int i = 0; i < count; i++)
             {
                 names.Clear();
-                amount = PlayerPrefs.GetFloat("Liquid" + i + "Amount");
-                weight = PlayerPrefs.GetFloat("Liquid" + i + "Weight");
-                color = new UnityEngine.Color(PlayerPrefs.GetFloat("Liquid" + i + "ColorR"),
-                                    PlayerPrefs.GetFloat("Liquid" + i + "ColorG"),
-                                    PlayerPrefs.GetFloat("Liquid" + i + "ColorB"));
+                amount = PlayerPrefs.GetFloat(id + "Liquid" + i + "Amount");
+                weight = PlayerPrefs.GetFloat(id + "Liquid" + i + "Weight");
+                color = new UnityEngine.Color(PlayerPrefs.GetFloat(id + "Liquid" + i + "ColorR"),
+                                    PlayerPrefs.GetFloat(id + "Liquid" + i + "ColorG"),
+                                    PlayerPrefs.GetFloat(id + "Liquid" + i + "ColorB"));
 
-                dcount = PlayerPrefs.GetInt("Liquid" + i + "DrinkTagCount"); ;
+                dcount = PlayerPrefs.GetInt(id + "Liquid" + i + "DrinkTagCount"); ;
 
                 for (int j = 0; j < dcount; j++)
                 {
-                    names.Add(GameResMng.Instance.GetDrinkNameBySpriteName(PlayerPrefs.GetString("Liquid" + i + "DrinkTag" + j)));
+                    names.Add(GameResMng.Instance.GetDrinkNameBySpriteName(PlayerPrefs.GetString(id + "Liquid" + i + "DrinkTag" + j)));
                 }
                 Debug.Log("MakeGlassLiquid" + i + "Add(" + amount + "," + weight + "," + color + "," + names);
                 liquidList.Add(new Liquid(amount, weight, color, names));
@@ -167,23 +180,23 @@ public class Glass : MonoBehaviour
                 vessel = 2;
                 break;
         }
-        PlayerPrefs.SetInt("Vessel" + "Name", vessel);
+        PlayerPrefs.SetInt(id + "Vessel" + "Name", vessel);
         int a = isIce ? 1 : 0;
-        PlayerPrefs.SetInt("Glass" + "Ice", a );
-        PlayerPrefs.SetInt("LiquidCount", liquidList.Count);
+        PlayerPrefs.SetInt(id + "Glass" + "Ice", a );
+        PlayerPrefs.SetInt(id + "LiquidCount", liquidList.Count);
         for (int i = 0; i < liquidList.Count; i++)
         {
             
-            PlayerPrefs.SetFloat("Liquid" + i + "Amount", liquidList[i].Amount);
-            PlayerPrefs.SetFloat("Liquid" + i + "Weight", liquidList[i].Weight);
-            PlayerPrefs.SetFloat("Liquid" + i + "ColorR", liquidList[i].Color.r);
-            PlayerPrefs.SetFloat("Liquid" + i + "ColorG", liquidList[i].Color.g);
-            PlayerPrefs.SetFloat("Liquid" + i + "ColorB", liquidList[i].Color.b);
+            PlayerPrefs.SetFloat(id + "Liquid" + i + "Amount", liquidList[i].Amount);
+            PlayerPrefs.SetFloat(id + "Liquid" + i + "Weight", liquidList[i].Weight);
+            PlayerPrefs.SetFloat(id + "Liquid" + i + "ColorR", liquidList[i].Color.r);
+            PlayerPrefs.SetFloat(id + "Liquid" + i + "ColorG", liquidList[i].Color.g);
+            PlayerPrefs.SetFloat(id + "Liquid" + i + "ColorB", liquidList[i].Color.b);
 
-            PlayerPrefs.SetInt("Liquid" + i + "DrinkTagCount", liquidList[i].DrinkTags.Count);
+            PlayerPrefs.SetInt(id + "Liquid" + i + "DrinkTagCount", liquidList[i].DrinkTags.Count);
             for (int j = 0; j < liquidList[i].DrinkTags.Count; j++)
             {
-                PlayerPrefs.SetString("Liquid" + i + "DrinkTag" + j, GameResMng.Instance.GetSpriteNameByDrinkName(liquidList[i].DrinkTags[j]));
+                PlayerPrefs.SetString(id + "Liquid" + i + "DrinkTag" + j, GameResMng.Instance.GetSpriteNameByDrinkName(liquidList[i].DrinkTags[j]));
             }
         }
     }
