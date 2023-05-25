@@ -14,6 +14,8 @@ public class Time2min : MonoBehaviour
     public GameObject[] menue;//이전,홈 버튼
     public GameObject[] underbar;//천장스크롤 UI Cupboard Scroll View 
 
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +55,7 @@ public class Time2min : MonoBehaviour
              underbar[1].SetActive(false); //Cupboard Scroll View Down 비활성화
              underbar[2].SetActive(false); //check 버튼(주조씬으로 넘어가는 버튼) 비활성화
              underbar[3].SetActive(false); // 타이머 비활성화
+             audioSource.Play();
         }    
      }
     }

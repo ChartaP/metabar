@@ -7,9 +7,12 @@ using UnityEngine.UI;
 public class ButtonController : MonoBehaviour
 {    
     //씬 전환 스크립트
+
+  
     
     void start()
     {
+      
 
     }
 
@@ -25,5 +28,15 @@ public class ButtonController : MonoBehaviour
      public void HomeScene()
     {
         SceneManager.LoadScene(0); // 메인 메뉴로 이동 //임의 0번
+    }
+
+    public void HintBtn()
+
+    {
+
+        
+        
+
+        
     }
 }
