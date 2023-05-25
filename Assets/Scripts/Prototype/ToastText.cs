@@ -9,6 +9,12 @@ public class ToastText : MonoBehaviour
     private float waitTime = 3f;
     [SerializeField]
     private TMPro.TMP_Text tmp = null;    
+
+    public void SetText(string text)
+    {
+        tmp.text = text;
+
+    }
     // Start is called before the first frame update
     void Start()
     {
