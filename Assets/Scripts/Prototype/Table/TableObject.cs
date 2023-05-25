@@ -83,6 +83,7 @@ public class TableObject : ProtoClickObject
                 StartCoroutine(myDrag);
                 //Debug.Log("WaitClick Stop");
                 StopCoroutine(myWait);
+                yield break;
             }
             yield return null;
         }
@@ -112,6 +113,7 @@ public class TableObject : ProtoClickObject
                 //Debug.Log("Dragging Stop");
                 transform.localPosition = posOrgn;
                 StopCoroutine(myDrag);
+                yield break;
             }
             yield return null;
         }
