@@ -26,4 +26,8 @@ public class SceneCtrl : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+    public void ChangeScene3()
+    {
+        SceneManager.LoadScene("메인으로가는씬");
+    }
 }
