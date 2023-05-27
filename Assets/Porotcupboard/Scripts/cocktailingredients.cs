@@ -22,7 +22,7 @@ public class cocktailingredients : MonoBehaviour
 
     void Start()
     {
-        
+        cocktailingredientslObject.SetActive(false);
     }
     
 
@@ -47,7 +47,7 @@ public class cocktailingredients : MonoBehaviour
         // 각 배열에 입력된 재료들 중 Pousse Cafe 레시피에 해당된 재료만 활성화 되면 "Pousse Cafe"이름을 저장
         if (AlcoholObject[11].activeSelf && AlcoholObject[3].activeSelf 
             && NonAlcoholObject[1].activeSelf && CocktaillGlassObject[7].activeSelf
-             && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
+&& ToolObject[14].activeSelf             && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             //Debug.Log("Pousse Cafe");
             //SaveSelectedCocktail("Pousse Cafe"); //해당 칵테일 이름 저장
@@ -56,7 +56,7 @@ public class cocktailingredients : MonoBehaviour
          // 각 배열에 입력된 재료들 중 Manhattan 레시피에 해당된 재료만 활성화 되면 "Manhattan"이름을 저장
         else if (AlcoholObject[8].activeSelf && AlcoholObject[11].activeSelf
             && AlcoholObject[32].activeSelf && NonAlcoholObject[20].activeSelf
-            && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
+            && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             //Debug.Log("Manhattan");
             //SaveSelectedCocktail("Manhattan"); //해당 칵테일 이름 저장
@@ -65,7 +65,7 @@ public class cocktailingredients : MonoBehaviour
          // 각 배열에 입력된 재료들 중 Dry Martini 레시피에 해당된 재료만 활성화 되면 "Dry Martini"이름을 저장
         else if (AlcoholObject[1].activeSelf && AlcoholObject[12].activeSelf
             && NonAlcoholObject[18].activeSelf && CocktaillGlassObject[6].activeSelf
-            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
+&& ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             //Debug.Log("Dry Martini");
             //SaveSelectedCocktail("Dry Martini"); //해당 칵테일 이름 저장
@@ -75,7 +75,7 @@ public class cocktailingredients : MonoBehaviour
             && NonAlcoholObject[17].activeSelf && NonAlcoholObject[12].activeSelf
             && NonAlcoholObject[20].activeSelf && NonAlcoholObject[22].activeSelf
             && CocktaillGlassObject[2].activeSelf
-            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+&& ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf
 )
         {
@@ -85,7 +85,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[15].activeSelf
             && NonAlcoholObject[9].activeSelf &&/*넛트파우더로 변경*/ NonAlcoholObject[0].activeSelf && CocktaillGlassObject[6].activeSelf
-            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+&& ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             //넛트 파우더 추가
@@ -94,7 +94,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[1].activeSelf && AlcoholObject[33].activeSelf
             && NonAlcoholObject[4].activeSelf && NonAlcoholObject[17].activeSelf && NonAlcoholObject[12].activeSelf 
-            && CocktaillGlassObject[16].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && CocktaillGlassObject[16].activeSelf&& ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf))
         {
             
@@ -111,7 +111,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[2].activeSelf && (AlcoholObject[27].activeSelf ||AlcoholObject[17].activeSelf)
             && NonAlcoholObject[11].activeSelf && NonAlcoholObject[16].activeSelf && CocktaillGlassObject[6].activeSelf
-            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+&& ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf)
 )
         {
@@ -120,7 +120,7 @@ public class cocktailingredients : MonoBehaviour
             CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[9].activeSelf && AlcoholObject[18].activeSelf
-            && CocktaillGlassObject[2].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+            && CocktaillGlassObject[2].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -130,7 +130,7 @@ public class cocktailingredients : MonoBehaviour
         else if (AlcoholObject[8].activeSelf && NonAlcoholObject[4].activeSelf
             && NonAlcoholObject[17].activeSelf && NonAlcoholObject[12].activeSelf
             && NonAlcoholObject[19].activeSelf && NonAlcoholObject[20].activeSelf
-             && CocktaillGlassObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+             && CocktaillGlassObject[14].activeSelf&& ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf))
         {
             
@@ -139,7 +139,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[8].activeSelf && NonAlcoholObject[11].activeSelf
             && NonAlcoholObject[17].activeSelf && NonAlcoholObject[1].activeSelf
-            && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[6].activeSelf  &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -147,7 +147,7 @@ public class cocktailingredients : MonoBehaviour
               CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[6].activeSelf && NonAlcoholObject[11].activeSelf
-            && NonAlcoholObject[17].activeSelf && CocktaillGlassObject[6].activeSelf  &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[17].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -164,7 +164,7 @@ public class cocktailingredients : MonoBehaviour
         else if (AlcoholObject[23].activeSelf && AlcoholObject[19].activeSelf && /*바나나리큐르*/AlcoholObject[0].activeSelf
             && NonAlcoholObject[10].activeSelf && NonAlcoholObject[0].activeSelf 
             && NonAlcoholObject[20].activeSelf && NonAlcoholObject[21].activeSelf 
-            && CocktaillGlassObject[4].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && CocktaillGlassObject[4].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) )
         {
             
@@ -172,7 +172,7 @@ public class cocktailingredients : MonoBehaviour
               CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[7].activeSelf && NonAlcoholObject[11].activeSelf
-            && NonAlcoholObject[2].activeSelf && CocktaillGlassObject[6].activeSelf 
+            && NonAlcoholObject[2].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf
             &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
@@ -182,7 +182,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[6].activeSelf && NonAlcoholObject[11].activeSelf
             && NonAlcoholObject[13].activeSelf && NonAlcoholObject[19].activeSelf 
-            && CocktaillGlassObject[3].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+            && CocktaillGlassObject[3].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -190,7 +190,7 @@ public class cocktailingredients : MonoBehaviour
               CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[11].activeSelf && AlcoholObject[16].activeSelf
-            && NonAlcoholObject[9].activeSelf && CocktaillGlassObject[11].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[9].activeSelf && CocktaillGlassObject[11].activeSelf&& ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -200,7 +200,7 @@ public class cocktailingredients : MonoBehaviour
         else if (AlcoholObject[0].activeSelf && NonAlcoholObject[8].activeSelf
             && NonAlcoholObject[6].activeSelf
             &&(/*라임*/NonAlcoholObject[11].activeSelf || NonAlcoholObject[19].activeSelf) 
-            && CocktaillGlassObject[3].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+            && CocktaillGlassObject[3].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -209,7 +209,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[0].activeSelf && AlcoholObject[25].activeSelf
             && NonAlcoholObject[11].activeSelf && NonAlcoholObject[23].activeSelf
-            && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -217,7 +217,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[1].activeSelf && AlcoholObject[13].activeSelf && AlcoholObject[26].activeSelf
-            && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[2].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+            && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[2].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -227,7 +227,7 @@ public class cocktailingredients : MonoBehaviour
         else if (AlcoholObject[1].activeSelf && AlcoholObject[0].activeSelf && AlcoholObject[6].activeSelf
             && AlcoholObject[17].activeSelf && AlcoholObject[2].activeSelf && NonAlcoholObject[0].activeSelf
             && NonAlcoholObject[13].activeSelf && (NonAlcoholObject[19].activeSelf || NonAlcoholObject[19].activeSelf)
-             && CocktaillGlassObject[4].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+             && CocktaillGlassObject[4].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -235,7 +235,7 @@ public class cocktailingredients : MonoBehaviour
                          CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[17].activeSelf
-            && NonAlcoholObject[4].activeSelf && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[4].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -246,7 +246,7 @@ public class cocktailingredients : MonoBehaviour
             && NonAlcoholObject[10].activeSelf && NonAlcoholObject[11].activeSelf 
             && NonAlcoholObject[5].activeSelf && NonAlcoholObject[1].activeSelf 
             && NonAlcoholObject[20].activeSelf && NonAlcoholObject[22].activeSelf 
-            && CocktaillGlassObject[16].activeSelf
+            && CocktaillGlassObject[16].activeSelf&& ToolObject[14].activeSelf
              && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf)
         {
             
@@ -255,7 +255,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[6].activeSelf && NonAlcoholObject[10].activeSelf
             && NonAlcoholObject[3].activeSelf && NonAlcoholObject[20].activeSelf
-            && NonAlcoholObject[21].activeSelf && CocktaillGlassObject[16].activeSelf
+            && NonAlcoholObject[21].activeSelf && CocktaillGlassObject[16].activeSelf&& ToolObject[14].activeSelf
             && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf )
         {
             
@@ -264,7 +264,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[0].activeSelf && AlcoholObject[17].activeSelf
             && NonAlcoholObject[11].activeSelf && NonAlcoholObject[8].activeSelf && CocktaillGlassObject[0].activeSelf
-            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+&& ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -272,7 +272,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[0].activeSelf && NonAlcoholObject[11].activeSelf
-            && NonAlcoholObject[15].activeSelf && CocktaillGlassObject[3].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+            && NonAlcoholObject[15].activeSelf && CocktaillGlassObject[3].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -280,7 +280,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[2].activeSelf
-            && NonAlcoholObject[4].activeSelf && NonAlcoholObject[5].activeSelf && CocktaillGlassObject[6].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[4].activeSelf && NonAlcoholObject[5].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) )
         {
             
@@ -288,7 +288,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[29].activeSelf && AlcoholObject[17].activeSelf
-            && NonAlcoholObject[4].activeSelf && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[4].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -296,7 +296,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[6].activeSelf && AlcoholObject[30].activeSelf && AlcoholObject[19].activeSelf
-            && NonAlcoholObject[10].activeSelf && CocktaillGlassObject[16].activeSelf
+            && NonAlcoholObject[10].activeSelf && CocktaillGlassObject[16].activeSelf&& ToolObject[14].activeSelf
              && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf)
         {
             
@@ -305,7 +305,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[31].activeSelf //&& AlcoholObject[0].activeSelf
             && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[9].activeSelf
-            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+&& ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -313,7 +313,7 @@ public class cocktailingredients : MonoBehaviour
                        CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[2].activeSelf && NonAlcoholObject[1].activeSelf
-            && NonAlcoholObject[5].activeSelf && CocktaillGlassObject[16].activeSelf
+            && NonAlcoholObject[5].activeSelf && CocktaillGlassObject[16].activeSelf&& ToolObject[14].activeSelf
             &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
@@ -322,7 +322,7 @@ public class cocktailingredients : MonoBehaviour
                          CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[36].activeSelf && AlcoholObject[29].activeSelf && AlcoholObject[31].activeSelf
-            && NonAlcoholObject[0].activeSelf && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[0].activeSelf && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -330,7 +330,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[38].activeSelf && AlcoholObject[10].activeSelf
-            && NonAlcoholObject[7].activeSelf && NonAlcoholObject[1].activeSelf && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[7].activeSelf && NonAlcoholObject[1].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -338,7 +338,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[37].activeSelf && AlcoholObject[17].activeSelf && AlcoholObject[25].activeSelf
-            && NonAlcoholObject[11].activeSelf && NonAlcoholObject[23].activeSelf  && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[11].activeSelf && NonAlcoholObject[23].activeSelf  && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -346,7 +346,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[39].activeSelf && AlcoholObject[14].activeSelf && AlcoholObject[25].activeSelf
-            && NonAlcoholObject[11].activeSelf && CocktaillGlassObject[6].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+            && NonAlcoholObject[11].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
@@ -354,7 +354,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (AlcoholObject[40].activeSelf && AlcoholObject[17].activeSelf 
-            && NonAlcoholObject[15].activeSelf && CocktaillGlassObject[12].activeSelf
+            && NonAlcoholObject[15].activeSelf && CocktaillGlassObject[12].activeSelf&& ToolObject[14].activeSelf
             &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -363,7 +363,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (AlcoholObject[1].activeSelf && NonAlcoholObject[12].activeSelf && NonAlcoholObject[17].activeSelf
             && NonAlcoholObject[4].activeSelf && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[3].activeSelf
-            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
+&& ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf))
         {
             
@@ -371,7 +371,7 @@ public class cocktailingredients : MonoBehaviour
                       CocktailMaking();// 다음 조주 씬으로 이동
         }
         else if (NonAlcoholObject[19].activeSelf && NonAlcoholObject[17].activeSelf
-            && NonAlcoholObject[12].activeSelf && CocktaillGlassObject[3].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
+            && NonAlcoholObject[12].activeSelf && CocktaillGlassObject[3].activeSelf&& ToolObject[14].activeSelf&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
@@ -380,7 +380,7 @@ public class cocktailingredients : MonoBehaviour
         }
         else if (NonAlcoholObject[5].activeSelf && NonAlcoholObject[8].activeSelf && NonAlcoholObject[1].activeSelf && NonAlcoholObject[4].activeSelf
             && NonAlcoholObject[10].activeSelf && NonAlcoholObject[6].activeSelf && CocktaillGlassObject[0].activeSelf
-             && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf)
+&& ToolObject[14].activeSelf             && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf)
         {
             
             //SaveSelectedCocktail("VurginFruitPunch"); //해당 칵테일 이름 저장
