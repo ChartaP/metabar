@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - item
+  - item1
+  - cupboard1
+  - cupboard2
+  - cupboard3
+  - cupboard4
   layers:
   - Default
   - TransparentFX
