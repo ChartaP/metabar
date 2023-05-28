@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Prototype/\uC5F0\uC2B5\uBAA8\uB4DC/ExProtoCounter.unity"
     guid: 423aea3d8a37e654285516280c287f6e
+  - enabled: 1
+    path: "Assets/Scenes/Prototype/\uC5F0\uC2B5\uBAA8\uB4DC/ExprotoCounter2.unity"
+    guid: 247cb40b34239994b9a7eccca4f7c8b8
   m_configObjects: {}

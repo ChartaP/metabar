@@ -10,7 +10,7 @@ public class nextScenetext : MonoBehaviour
     void Start()
     {
         // 첫 번째 씬에서 저장한 텍스트를 가져와서 표시
-        string textData = PlayerPrefs.GetString("TextData");
+        string textData = PlayerPrefs.GetString("Cocktailname");
         textUI.text = textData;
     }
 

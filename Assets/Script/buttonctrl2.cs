@@ -25,9 +25,13 @@ public class buttonctrl2 : MonoBehaviour
         PlayerPrefs.SetString("TextData", inputtext.text);
         SceneManager.LoadScene(2);
     }
-    public void Cocktailname()
+    public void Button2()
     {
-        
+        // 텍스트를 저장하고 다음 씬으로 전달
+        PlayerPrefs.SetString("TextData", inputtext.text);
+        SceneManager.LoadScene(8);
     }
+
+
 
 }

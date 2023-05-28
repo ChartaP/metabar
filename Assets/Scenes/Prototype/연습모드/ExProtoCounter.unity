@@ -279,7 +279,7 @@ RectTransform:
   m_Children:
   - {fileID: 703282116}
   m_Father: {fileID: 1440790158}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -410,7 +410,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1647263072}
         m_TargetAssemblyTypeName: buttonctrl2, Assembly-CSharp
-        m_MethodName: Button
+        m_MethodName: Button2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -544,7 +544,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2079347171}
         m_TargetAssemblyTypeName: buttonctrl2, Assembly-CSharp
-        m_MethodName: Button
+        m_MethodName: Button2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: "\uC870\uC8FC\uD558\uAE30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3adf70dd7dd3cc7448fd79b9f77b2723, type: 2}
   m_sharedMaterial: {fileID: -2894038580155774681, guid: 3adf70dd7dd3cc7448fd79b9f77b2723, type: 2}
@@ -1399,10 +1399,10 @@ RectTransform:
   - {fileID: 1647263067}
   - {fileID: 2079347166}
   - {fileID: 1911608082}
+  - {fileID: 514892373}
   - {fileID: 1709722911}
   - {fileID: 1899846883}
   - {fileID: 1005689679}
-  - {fileID: 514892373}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2063,7 +2063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: "\uC870\uC8FC\uD558\uAE30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3adf70dd7dd3cc7448fd79b9f77b2723, type: 2}
   m_sharedMaterial: {fileID: -2894038580155774681, guid: 3adf70dd7dd3cc7448fd79b9f77b2723, type: 2}
@@ -2198,7 +2198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: "\uC870\uC8FC\uD558\uAE30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3adf70dd7dd3cc7448fd79b9f77b2723, type: 2}
   m_sharedMaterial: {fileID: -2894038580155774681, guid: 3adf70dd7dd3cc7448fd79b9f77b2723, type: 2}
@@ -2362,7 +2362,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 620417962}
         m_TargetAssemblyTypeName: buttonctrl2, Assembly-CSharp
-        m_MethodName: Button
+        m_MethodName: Button2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
