@@ -23,11 +23,12 @@ public class Restartbutton : MonoBehaviour
     }
     public void ChangeScene()
     {
-        SceneManager.LoadScene("ExampleScene");
+        SceneManager.LoadScene(3);//메인으로 가는씬
        
     }
     public void Timereset()
     {
+        // 실전 모드에서 reset버튼을 누르면 저장된 키값과 시간을 초기화합니다.
         PlayerPrefs.DeleteAll();
         timer.timeLeft *= 0.0f;
         

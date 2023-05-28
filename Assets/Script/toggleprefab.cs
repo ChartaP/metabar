@@ -10,7 +10,7 @@ public class toggleprefab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        toggle.onValueChanged.AddListener(OnToggleValueChanged);
+        toggle.onValueChanged.AddListener(OnToggleValueChanged);// 토글의 상태 변화 감지를 위한 이벤트 리스너 등록
     }
     private void OnToggleValueChanged(bool value)
     {

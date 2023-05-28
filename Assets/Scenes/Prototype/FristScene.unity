@@ -758,50 +758,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084305134}
   m_CullTransparentMesh: 1
---- !u!1 &1186988588
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1186988590}
-  - component: {fileID: 1186988589}
-  m_Layer: 0
-  m_Name: Click
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1186988589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186988588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcaf81260351f3848ab667c0677802f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1186988590
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186988588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 421.139, y: 265.72308, z: 2.8352473}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393122163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1181,7 @@ GameObject:
   - component: {fileID: 1817644890}
   - component: {fileID: 1817644889}
   - component: {fileID: 1817644888}
+  - component: {fileID: 1817644891}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -1297,9 +1254,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186988589}
-        m_TargetAssemblyTypeName: SceneCtrl2, Assembly-CSharp
-        m_MethodName: ChangeScene
+      - m_Target: {fileID: 1817644891}
+        m_TargetAssemblyTypeName: SceneCtrl, Assembly-CSharp
+        m_MethodName: ChangeScene3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1347,6 +1304,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817644886}
   m_CullTransparentMesh: 1
+--- !u!114 &1817644891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817644886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a612482e70f4046beb04ceb38a8a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2070398874
 GameObject:
   m_ObjectHideFlags: 0
