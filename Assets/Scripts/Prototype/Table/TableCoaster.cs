@@ -26,6 +26,11 @@ public class TableCoaster : MonoBehaviour
         this.placedGlass = placedGlass;
     }
 
+    public GameObject PlacedGlass
+    {
+        get { return this.placedGlass; }
+    }
+
     /// <summary>
     /// 코스터 위에 올라오는 글라스의 위치
     /// </summary>

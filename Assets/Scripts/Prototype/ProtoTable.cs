@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 using static UnityEngine.GridBrushBase;
 
 public class ProtoTable : MonoBehaviour
@@ -36,6 +38,15 @@ public class ProtoTable : MonoBehaviour
     [SerializeField]
     private DrinkName[] preDrinks;
 
+    [SerializeField]
+    private Transform ToastPoint;
+
+    [SerializeField]
+    private GameObject ToastMsg;
+
+
+    [SerializeField]
+    private TableCoaster coaster = null;
     private void Load()
     {
         if (isUsingPre)
@@ -117,9 +128,68 @@ public class ProtoTable : MonoBehaviour
         }
     }
 
-
     public void Submit()
     {
-        Debug.Log("Submit");
+        Glass glass = coaster.PlacedGlass.GetComponent<Glass>();
+        Debug.Log(glass.ToString());
+
+        Debug.Log(FindCocktailByGlassInfo(glass));
+    }
+
+    public CocktailName FindCocktailByGlassInfo(Glass glass)
+    {
+        //List<Liquid> liquids = glass.GetLiquids();
+        List<DrinkName> tag0 = glass.GetLiquidTags(0);
+        List<DrinkName> tag1 = glass.GetLiquidTags(1);
+        List<DrinkName> tag2 = glass.GetLiquidTags(2);
+
+        if(glass.GlassName == GlassName.OldFashioned)
+        {
+            if(tag0 != null && tag1 == null && tag2 == null)
+            {
+                if(tag0.Count == 2)
+                {
+                    if (tag0[0] == DrinkName.Vodka && tag0[1] == DrinkName.Kahlua)
+                    {
+                        return CocktailName.BlackRussian;
+                    }
+                }
+            }
+        }
+        else if(glass.GlassName == GlassName.Liqueur)
+        {
+            if (tag0 != null && tag1 != null && tag2 != null)
+            {
+                if (tag0.Count == 1 && tag1.Count == 1 && tag2.Count == 1)
+                {
+                    if (tag0[0] == DrinkName.GrenadineSyrup && tag1[0] == DrinkName.CremeDeMentheGreen && tag2[0] == DrinkName.BrandyCognac)
+                    {
+                        return CocktailName.PousseCafe;
+                    }
+                }
+            }
+        }
+        else if(glass.GlassName == GlassName.SherryWine)
+        {
+            if (tag0 != null && tag1 != null && tag2 != null)
+            {
+                if (tag0.Count == 1 && tag1.Count == 1 && tag2.Count == 1)
+                {
+                    if (tag0[0] == DrinkName.Kahlua && tag1[0] == DrinkName.BaileysIrishCream && tag2[0] == DrinkName.GrandMarnier)
+                    {
+                        return CocktailName.B52;
+                    }
+                }
+            }
+        }
+
+        Instantiate(ToastMsg, Vector2.zero,Quaternion.identity, ToastPoint).GetComponent<ToastText>().SetText("칵테일이 완성되지 않았습니다.");
+
+        return CocktailName.Null;
+    }
+
+    public bool IsRightCocktail(Glass glass)
+    {
+        return false;
     }
 }

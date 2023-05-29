@@ -1,3 +1,4 @@
+using Mono.Cecil;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -96,15 +97,33 @@ public class Glass : MonoBehaviour
         }
     }
 
+    public GlassName GlassName
+    {
+        get { return glassName; }
+    }
+
+    public List<DrinkName> GetLiquidTags(int i)
+    {
+        if(i < liquidList.Count)
+            return liquidList?[i].DrinkTags;
+        else
+            return null;
+    }
+
+    public List<Liquid> GetLiquids()
+    {
+        return liquidList;
+    }
+
     public bool IsFloatable(DrinkName dropname)
     {
-        return liquidList [liquidList.Count - 1].IsFloatable(dropname);
+        return liquidList[liquidList.Count - 1].IsFloatable(dropname);
     }
 
 
-    public void FloatingLiquid(float amount,DrinkName drinkName)
+    public void FloatingLiquid(float amount, DrinkName drinkName)
     {
-        liquidList.Add(new Liquid(amount,drinkName));
+        liquidList.Add(new Liquid(amount, drinkName));
     }
 
     public void MixingLiquid(float amount, DrinkName drinkName)
@@ -119,11 +138,12 @@ public class Glass : MonoBehaviour
     {
         try
         {
-            int a = PlayerPrefs.GetInt(id+"GlassIce");
-            if (a == 1) {
+            int a = PlayerPrefs.GetInt(id + "GlassIce");
+            if (a == 1)
+            {
                 SetIce(true);
             }
-            else if(a == 0)
+            else if (a == 0)
             {
                 SetIce(false);
             }
@@ -138,7 +158,7 @@ public class Glass : MonoBehaviour
 
             for (int i = 0; i < count; i++)
             {
-                names.Clear();
+                names = new List<DrinkName>();
                 amount = PlayerPrefs.GetFloat(id + "Liquid" + i + "Amount");
                 weight = PlayerPrefs.GetFloat(id + "Liquid" + i + "Weight");
                 color = new UnityEngine.Color(PlayerPrefs.GetFloat(id + "Liquid" + i + "ColorR"),
@@ -182,11 +202,11 @@ public class Glass : MonoBehaviour
         }
         PlayerPrefs.SetInt(id + "Vessel" + "Name", vessel);
         int a = isIce ? 1 : 0;
-        PlayerPrefs.SetInt(id + "Glass" + "Ice", a );
+        PlayerPrefs.SetInt(id + "Glass" + "Ice", a);
         PlayerPrefs.SetInt(id + "LiquidCount", liquidList.Count);
         for (int i = 0; i < liquidList.Count; i++)
         {
-            
+
             PlayerPrefs.SetFloat(id + "Liquid" + i + "Amount", liquidList[i].Amount);
             PlayerPrefs.SetFloat(id + "Liquid" + i + "Weight", liquidList[i].Weight);
             PlayerPrefs.SetFloat(id + "Liquid" + i + "ColorR", liquidList[i].Color.r);
@@ -199,6 +219,28 @@ public class Glass : MonoBehaviour
                 PlayerPrefs.SetString(id + "Liquid" + i + "DrinkTag" + j, GameResMng.Instance.GetSpriteNameByDrinkName(liquidList[i].DrinkTags[j]));
             }
         }
+    }
+
+    public override string ToString()
+    {
+        String str = "";
+        str += "GlassName : " + glassName.ToString() + " ";
+        str += "IsIce : " + isIce.ToString() + " ";
+        for (int i = 0; i < liquidList.Count; i++)
+        {
+            str += "Amount" + liquidList[i].Amount + " ";
+            str += "Weight" + liquidList[i].Weight + " ";
+            str += "R" + liquidList[i].Color.r + " ";
+            str += "G" + liquidList[i].Color.g + " ";
+            str += "B" + liquidList[i].Color.b + " ";
+            str += "Tag : ";
+            for (int j = 0; j < liquidList[i].DrinkTags.Count; j++)
+            {
+
+                str += "["+j+"]" + liquidList[i].DrinkTags[j] + " ";
+            }
+        }
+        return str;
     }
 
     protected void Start()
@@ -291,7 +333,8 @@ public class Glass : MonoBehaviour
     }
 }
 
-public enum LiquidState{
+public enum LiquidState
+{
     Unmixed,
     Mixed
 }
@@ -344,7 +387,7 @@ public class Liquid
     {
         foreach (DrinkName drinkName in DrinkTags)
         {
-            if(drinkName == FindName)
+            if (drinkName == FindName)
             {
                 return true;
             }
@@ -354,7 +397,7 @@ public class Liquid
 
     public void MixDrink(float amount, DrinkName drinkName)
     {
-        
+
         float weight = GameResMng.Instance.GetDrinkWeightByDrinkName(drinkName);
         UnityEngine.Color color = GameResMng.Instance.GetDrinkColorByDrinkName(drinkName);
 
