@@ -47,8 +47,17 @@ public class ProtoTable : MonoBehaviour
 
     [SerializeField]
     private TableCoaster coaster = null;
+
+    [SerializeField]
+    private int timeLimit = 420;
+
+    [SerializeField]
+    private Timer timer = null;
+
     private void Load()
     {
+        if(PlayerPrefs.HasKey("TimerCount"))
+            timeLimit = PlayerPrefs.GetInt("TimerCount");
         if (isUsingPre)
         {
             //사전준비데이터 사용
@@ -58,10 +67,19 @@ public class ProtoTable : MonoBehaviour
         {
             //사전준비데이터 미사용
             //PlayerPref에서 데이터 가져오기
-
         }
     }
-    
+
+    private void Save()
+    {
+        PlayerPrefs.SetInt("TimerCount",timeLimit);
+    }
+
+    protected void OnDestroy()
+    {
+        Save();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,12 +88,27 @@ public class ProtoTable : MonoBehaviour
         GlassSet();
         AlcoholSet();
         //NonAlcoholicSet();
+        StartCoroutine(TimerCount());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    }
+
+    private IEnumerator TimerCount()
+    {
+        timer.SetTime(timeLimit);
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            timeLimit -= 1;
+            timer.SetTime(timeLimit);
+            if(timeLimit <= 0)
+            {
+                Debug.Log("시간 종료");
+            }
+        }
     }
 
     private void ToolSet()

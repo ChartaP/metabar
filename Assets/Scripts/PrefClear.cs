@@ -33,6 +33,7 @@ public class PrefClear : MonoBehaviour
     void OnApplicationQuit()
     {
         PlayerPrefs.DeleteAll();
+        Debug.Log("전부 지움");
     }
 
 }

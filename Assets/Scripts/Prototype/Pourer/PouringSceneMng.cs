@@ -45,6 +45,16 @@ public class PouringSceneMng : MonoBehaviour
     [SerializeField]
     private GameObject[] vesselPrefabs;
 
+    [SerializeField]
+    private TMPro.TMP_Text drinkText;
+
+    [SerializeField]
+    private int timeLimit = 420;
+
+
+    [SerializeField]
+    private Timer timer = null;
+
     void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 500, 20), "This is some debug text");
@@ -52,11 +62,24 @@ public class PouringSceneMng : MonoBehaviour
 
     void Load()
     {
+        if (PlayerPrefs.HasKey("TimerCount"))
+            timeLimit = PlayerPrefs.GetInt("TimerCount");
+
         int vesselid = PlayerPrefs.GetInt("CoasterGlassID");
         int loadVessel = PlayerPrefs.GetInt(vesselid+"VesselName");
         Debug.Log(loadVessel);
         vesselObject = Instantiate(vesselPrefabs[loadVessel], vesselPoint);
         vesselObject.GetComponent<Glass>().SetID(vesselid);
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetInt("TimerCount", timeLimit);
+    }
+
+    protected void OnDestroy()
+    {
+        Save();
     }
 
     // Start is called before the first frame update
@@ -65,9 +88,30 @@ public class PouringSceneMng : MonoBehaviour
         Load();
     }
 
+    private void Start()
+    {
+
+        StartCoroutine(TimerCount());
+    }
+
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private IEnumerator TimerCount()
+    {
+        timer.SetTime(timeLimit);
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            timeLimit -= 1;
+            timer.SetTime(timeLimit);
+            if (timeLimit <= 0)
+            {
+                Debug.Log("시간 종료");
+            }
+        }
     }
 }
