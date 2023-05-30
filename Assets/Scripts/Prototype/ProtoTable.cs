@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 using static UnityEngine.GridBrushBase;
+using UnityEngine.SceneManagement;
 
 public class ProtoTable : MonoBehaviour
 {
@@ -54,19 +55,20 @@ public class ProtoTable : MonoBehaviour
     [SerializeField]
     private Timer timer = null;
 
+
     private void Load()
     {
         if(PlayerPrefs.HasKey("TimerCount"))
             timeLimit = PlayerPrefs.GetInt("TimerCount");
         if (isUsingPre)
         {
-            //�����غ����� ���
+            //??ル∥吏???⑹맶???됯뎡??ル∥???깅튂???ル∥吏???⑹맶???됯뎡 ??ル∥吏???⑹맶?
 
         }
         else
         {
-            //�����غ����� �̻��
-            //PlayerPref���� ������ ��������
+            //??ル∥吏???⑹맶???됯뎡??ル∥???깅튂???ル∥吏???⑹맶???됯뎡 ??ル∥堉??源녾뎡??
+            //PlayerPref??ル∥吏???⑹맶???됯뎡 ??ル∥吏???⑹맶???됯뎡??ル∥吏????ル∥吏???⑹맶???됯뎡??ル∥吏???⑹맶???됯뎡
         }
     }
 
@@ -106,7 +108,7 @@ public class ProtoTable : MonoBehaviour
             timer.SetTime(timeLimit);
             if(timeLimit <= 0)
             {
-                Debug.Log("�ð� ����");
+                Debug.Log("??ル∥六???걠????ル∥吏???⑹맶???됯뎡");
             }
         }
     }
@@ -167,6 +169,26 @@ public class ProtoTable : MonoBehaviour
         Debug.Log(glass.ToString());
 
         Debug.Log(FindCocktailByGlassInfo(glass));
+        if(FindCocktailByGlassInfo(glass) == CocktailName.BlackRussian )
+        {
+            PlayerPrefs.SetInt("succese1",1);
+        }
+        if (FindCocktailByGlassInfo(glass) == CocktailName.PousseCafe)
+        {
+            PlayerPrefs.SetInt("succese2", 1);
+        }
+        if (FindCocktailByGlassInfo(glass) == CocktailName.B52)
+        {
+            PlayerPrefs.SetInt("succese3", 1);
+        }
+
+        if(PlayerPrefs.HasKey("succese1")&& PlayerPrefs.HasKey("succese2")&& PlayerPrefs.HasKey("succese2"))
+        {
+            if(PlayerPrefs.GetInt("succese1") == 1 && PlayerPrefs.GetInt("succese2") == 1&& PlayerPrefs.GetInt("succese3") == 1)
+            {
+                SceneChange();
+            }
+        }
     }
 
     public CocktailName FindCocktailByGlassInfo(Glass glass)
@@ -216,7 +238,7 @@ public class ProtoTable : MonoBehaviour
             }
         }
 
-        Instantiate(ToastMsg, Vector2.zero,Quaternion.identity, ToastPoint).GetComponent<ToastText>().SetText("Ĭ������ �ϼ����� �ʾҽ��ϴ�.");
+        Instantiate(ToastMsg, Vector2.zero,Quaternion.identity, ToastPoint).GetComponent<ToastText>().SetText("??筌앸럽泥? ???담궘???덈펲.");
 
         return CocktailName.Null;
     }
@@ -224,5 +246,9 @@ public class ProtoTable : MonoBehaviour
     public bool IsRightCocktail(Glass glass)
     {
         return false;
+    }
+    public void SceneChange()
+    {
+        SceneManager.LoadScene("SuccessScene");
     }
 }

@@ -20,7 +20,8 @@ public class GameScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        startCounter = 0;
+        Problem = 0;
         Match = startCounter;
         value = startCounter;
 
