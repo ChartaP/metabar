@@ -11,7 +11,7 @@ public class TableCoaster : MonoBehaviour
     private GameObject placedGlass = null;
 
     /// <summary>
-    /// ÄÚ½ºÅÍ À§¿¡ ¿ÀºêÁ§Æ®°¡ ÀÖ´ÂÁö?
+    /// ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½?
     /// </summary>
     public bool IsPlaced
     {
@@ -32,7 +32,7 @@ public class TableCoaster : MonoBehaviour
     }
 
     /// <summary>
-    /// ÄÚ½ºÅÍ À§¿¡ ¿Ã¶ó¿À´Â ±Û¶ó½ºÀÇ À§Ä¡
+    /// ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ ï¿½Û¶ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
     /// </summary>
     public Vector3 GlassPos
     {

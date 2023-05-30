@@ -110,7 +110,7 @@ public class PouringSceneMng : MonoBehaviour
             timer.SetTime(timeLimit);
             if (timeLimit <= 0)
             {
-                Debug.Log("½Ã°£ Á¾·á");
+                Debug.Log("ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½");
             }
         }
     }

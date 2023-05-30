@@ -9,10 +9,16 @@ public class Restartbutton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float savedTime = PlayerPrefs.GetFloat("Time"); // ÀúÀåµÈ Å¸ÀÌ¸Ó °ªÀ» ºÒ·¯¿À±â.
-        if (savedTime > 0)
+        float savedTime;
+
+        if (PlayerPrefs.HasKey("Time"))
         {
-            timer.timeLeft = savedTime; // ºÒ·¯¿Â Å¸ÀÌ¸Ó °ª »ç¿ë.
+            savedTime = PlayerPrefs.GetFloat("Time"); // ì €ì¥ëœ íƒ€ì´ë¨¸ ê°’ì„ ë¶ˆëŸ¬ì˜¤ê¸°.
+
+            if (savedTime > 0)
+            {
+                timer.timeLeft = savedTime; // ë¶ˆëŸ¬ì˜¨ íƒ€ì´ë¨¸ ê°’ ì‚¬ìš©.
+            }
         }
     }
 
@@ -23,12 +29,12 @@ public class Restartbutton : MonoBehaviour
     }
     public void ChangeScene()
     {
-        SceneManager.LoadScene(3);//¸ŞÀÎÀ¸·Î °¡´Â¾À
+        SceneManager.LoadScene(3);//ë©”ì¸ìœ¼ë¡œ ê°€ëŠ”ì”¬
        
     }
     public void Timereset()
     {
-        // ½ÇÀü ¸ğµå¿¡¼­ reset¹öÆ°À» ´©¸£¸é ÀúÀåµÈ Å°°ª°ú ½Ã°£À» ÃÊ±âÈ­ÇÕ´Ï´Ù.
+        // ì‹¤ì „ ëª¨ë“œì—ì„œ resetë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì €ì¥ëœ í‚¤ê°’ê³¼ ì‹œê°„ì„ ì´ˆê¸°í™”í•©ë‹ˆë‹¤.
         PlayerPrefs.DeleteAll();
         timer.timeLeft *= 0.0f;
         

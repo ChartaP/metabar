@@ -33,7 +33,7 @@ public class PrefClear : MonoBehaviour
     void OnApplicationQuit()
     {
         PlayerPrefs.DeleteAll();
-        Debug.Log("ÀüºÎ Áö¿ò");
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
     }
 
 }

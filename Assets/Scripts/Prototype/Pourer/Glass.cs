@@ -32,7 +32,7 @@ public enum GlassName
 }
 
 /// <summary>
-/// Ä¬Å×ÀÏÀÜ Á¤º¸ °ü¸® ÄÄÆ÷³ÍÆ®
+/// Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 /// </summary>
 public class Glass : MonoBehaviour
 {
@@ -87,7 +87,7 @@ public class Glass : MonoBehaviour
     }
 
     /// <summary>
-    /// ÀÜ ¾È¿¡ Liquid°¡ Á¸ÀçÇÏ´ÂÁö ¹ÝÈ¯
+    /// ï¿½ï¿½ ï¿½È¿ï¿½ Liquidï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
     /// </summary>
     public bool HasLiquid
     {
@@ -132,18 +132,18 @@ public class Glass : MonoBehaviour
     }
 
     /// <summary>
-    /// ¾À ÀüÈ¯½Ã ³»¿ë¹° Á¤º¸ ·Îµå
+    /// ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ë¹° ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½
     /// </summary>
     protected void Load()
     {
         try
         {
             int a = PlayerPrefs.GetInt(id + "GlassIce");
-            if (a == 1)
+            if (a == 2)
             {
                 SetIce(true);
             }
-            else if (a == 0)
+            else if (a == 1)
             {
                 SetIce(false);
             }
@@ -183,7 +183,7 @@ public class Glass : MonoBehaviour
     }
 
     /// <summary>
-    /// ¾À ÀüÈ¯½Ã ³»¿ë¹° Á¤º¸ ÀúÀå
+    /// ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ë¹° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     protected void Save()
     {
@@ -201,7 +201,7 @@ public class Glass : MonoBehaviour
                 break;
         }
         PlayerPrefs.SetInt(id + "Vessel" + "Name", vessel);
-        int a = isIce ? 1 : 0;
+        int a = isIce ? 2 : 1;
         PlayerPrefs.SetInt(id + "Glass" + "Ice", a);
         PlayerPrefs.SetInt(id + "LiquidCount", liquidList.Count);
         for (int i = 0; i < liquidList.Count; i++)
@@ -259,7 +259,7 @@ public class Glass : MonoBehaviour
     }
 
     /// <summary>
-    /// ³»¿ë¹° ½ºÇÁ¶óÀÌÆ® ¼¼ÆÃ
+    /// ï¿½ï¿½ï¿½ë¹° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     public void SetDrinkSprite()
     {
@@ -302,7 +302,7 @@ public class Glass : MonoBehaviour
     }
 
     /// <summary>
-    /// ³»¿ë¹° À§Ä¡ ½º¿Ò
+    /// ï¿½ï¿½ï¿½ë¹° ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     /// <param name="a"></param>
     /// <param name="b"></param>
@@ -340,7 +340,7 @@ public enum LiquidState
 }
 
 /// <summary>
-/// ¾×Ã¼ Á¤º¸ Å¬·¡½º
+/// ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
 /// </summary>
 public class Liquid
 {
@@ -401,11 +401,11 @@ public class Liquid
         float weight = GameResMng.Instance.GetDrinkWeightByDrinkName(drinkName);
         UnityEngine.Color color = GameResMng.Instance.GetDrinkColorByDrinkName(drinkName);
 
-        // »õ·Î¿î ·®°ú ±âÁ¸ ·®ÀÇ ºñÀ²À» °è»êÇÕ´Ï´Ù.
+        // ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
         float newAmountRatio = amount / (this.amount + amount);
         float oldAmountRatio = 1 - newAmountRatio;
 
-        // weight¿Í color¸¦ ºñÀ²¿¡ ¸Â°Ô ¼¯½À´Ï´Ù.
+        // weightï¿½ï¿½ colorï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
         this.weight = this.weight * oldAmountRatio + weight * newAmountRatio;
         this.color = UnityEngine.Color.Lerp(this.color, color, newAmountRatio);
 
@@ -418,7 +418,7 @@ public class Liquid
     }
 
     /// <summary>
-    /// ÆÄ¶ó¹ÌÅÍ·Î ¹ÞÀº µå¸µÅ© Á¾·ù°¡ ÀÌ µå¸µÅ© À§¿¡ ¶ã ¼ö ÀÖ´ÂÁö ¿©ºÎ ¹ÝÈ¯
+    /// ï¿½Ä¶ï¿½ï¿½ï¿½Í·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½å¸µÅ© ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½å¸µÅ© ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
     /// </summary>
     /// <param name="drinkName"></param>
     /// <returns></returns>

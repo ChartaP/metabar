@@ -60,13 +60,13 @@ public class ProtoTable : MonoBehaviour
             timeLimit = PlayerPrefs.GetInt("TimerCount");
         if (isUsingPre)
         {
-            //»çÀüÁØºñµ¥ÀÌÅÍ »ç¿ë
+            //ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 
         }
         else
         {
-            //»çÀüÁØºñµ¥ÀÌÅÍ ¹Ì»ç¿ë
-            //PlayerPref¿¡¼­ µ¥ÀÌÅÍ °¡Á®¿À±â
+            //ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½
+            //PlayerPrefï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         }
     }
 
@@ -106,7 +106,7 @@ public class ProtoTable : MonoBehaviour
             timer.SetTime(timeLimit);
             if(timeLimit <= 0)
             {
-                Debug.Log("½Ã°£ Á¾·á");
+                Debug.Log("ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½");
             }
         }
     }
@@ -216,7 +216,7 @@ public class ProtoTable : MonoBehaviour
             }
         }
 
-        Instantiate(ToastMsg, Vector2.zero,Quaternion.identity, ToastPoint).GetComponent<ToastText>().SetText("Ä¬Å×ÀÏÀÌ ¿Ï¼ºµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+        Instantiate(ToastMsg, Vector2.zero,Quaternion.identity, ToastPoint).GetComponent<ToastText>().SetText("Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¾Ò½ï¿½ï¿½Ï´ï¿½.");
 
         return CocktailName.Null;
     }
