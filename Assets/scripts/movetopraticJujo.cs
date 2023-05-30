@@ -7,6 +7,6 @@ public class movetopraticJujo : MonoBehaviour
 {
     public void SceneChange()
     {
-        SceneManager.LoadScene("ExProtoCounter");
+        SceneManager.LoadScene("ExampleScene");
     }
 }
