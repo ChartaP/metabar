@@ -174,6 +174,8 @@ public class Glass : MonoBehaviour
                 Debug.Log("MakeGlassLiquid" + i + "Add(" + amount + "," + weight + "," + color + "," + names);
                 liquidList.Add(new Liquid(amount, weight, color, names));
             }
+
+
         }
         catch (Exception e)
         {
