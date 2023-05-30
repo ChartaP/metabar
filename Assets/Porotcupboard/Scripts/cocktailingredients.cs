@@ -7,16 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class cocktailingredients : MonoBehaviour
 {
-    public GameObject notcheck; //잘못된 레시피 선택 시 뜨는 텍스트창
-    public GameObject cocktailingredientslObject;// 컵보드에 있는 칵테일 재료들( 활성화,비활성화 조절 )
-    public GameObject[] AlcoholObject; // 알콜 재료 객체 배열
-    public GameObject[] NonAlcoholObject; //논알콜 재료 객체 배열
-    public GameObject[] CocktaillGlassObject; //칵테일 잔 재료 객체 배열
-    public GameObject[] ToolObject; //칵테일 도구 재료 객체 배열
+    public GameObject notcheck; //?섎せ???덉떆???좏깮 ???⑤뒗 ?띿뒪?몄갹
+    public GameObject cocktailingredientslObject;// 而듬낫?쒖뿉 ?덈뒗 移듯뀒???щ즺?? ?쒖꽦??鍮꾪솢?깊솕 議곗젅 )
+    public GameObject[] AlcoholObject; // ?뚯퐳 ?щ즺 媛앹껜 諛곗뿴
+    public GameObject[] NonAlcoholObject; //?쇱븣肄??щ즺 媛앹껜 諛곗뿴
+    public GameObject[] CocktaillGlassObject; //移듯뀒?????щ즺 媛앹껜 諛곗뿴
+    public GameObject[] ToolObject; //移듯뀒???꾧뎄 ?щ즺 媛앹껜 諛곗뿴
    // public int cocktailMnum;
    
 
-    private int cocktailcheckcount = 0; //비활성,활성화를 조절하기 위한 카운트
+    private int cocktailcheckcount = 0; //鍮꾪솢???쒖꽦?붾? 議곗젅?섍린 ?꾪븳 移댁슫??
 
 
 
@@ -28,13 +28,13 @@ public class cocktailingredients : MonoBehaviour
 
     public void OnButtonClick()
     {
-        cocktailcheckcount += 1;  //컵보드 천장에 있는 스크롤 UI에 있는 재료형 버튼 누를 시 카운트 +1
+        cocktailcheckcount += 1;  //而듬낫??泥쒖옣???덈뒗 ?ㅽ겕濡?UI???덈뒗 ?щ즺??踰꾪듉 ?꾨? ??移댁슫??+1
 
-        if (cocktailcheckcount % 2 != 0) // 카운트가 홀수면 하단 컵보드바에 있는 해당버튼과 같은 종류인 칵테일 재료 활성화
+        if (cocktailcheckcount % 2 != 0) // 移댁슫?멸? ??섎㈃ ?섎떒 而듬낫?쒕컮???덈뒗 ?대떦踰꾪듉怨?媛숈? 醫낅쪟??移듯뀒???щ즺 ?쒖꽦??
         {
             cocktailingredientslObject.SetActive(true);
         }
-        else //카운트가 짝수면 하단 컵보드바에 있는 해당버튼과 같은 종류인 칵테일 재료 비활성화
+        else //移댁슫?멸? 吏앹닔硫??섎떒 而듬낫?쒕컮???덈뒗 ?대떦踰꾪듉怨?媛숈? 醫낅쪟??移듯뀒???щ즺 鍮꾪솢?깊솕
         {
             cocktailingredientslObject.SetActive(false);
         }
@@ -44,32 +44,32 @@ public class cocktailingredients : MonoBehaviour
     public void CocktailingredientsCheck()
     {
 
-        // 각 배열에 입력된 재료들 중 Pousse Cafe 레시피에 해당된 재료만 활성화 되면 "Pousse Cafe"이름을 저장
+        // 媛?諛곗뿴???낅젰???щ즺??以?Pousse Cafe ?덉떆?쇱뿉 ?대떦???щ즺留??쒖꽦???섎㈃ "Pousse Cafe"?대쫫?????
         if (AlcoholObject[11].activeSelf && AlcoholObject[3].activeSelf 
             && NonAlcoholObject[1].activeSelf && CocktaillGlassObject[7].activeSelf
 && ToolObject[14].activeSelf             && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             //Debug.Log("Pousse Cafe");
-            //SaveSelectedCocktail("Pousse Cafe"); //해당 칵테일 이름 저장
-              CocktailMaking(); // 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Pousse Cafe"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking(); // ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
-         // 각 배열에 입력된 재료들 중 Manhattan 레시피에 해당된 재료만 활성화 되면 "Manhattan"이름을 저장
+         // 媛?諛곗뿴???낅젰???щ즺??以?Manhattan ?덉떆?쇱뿉 ?대떦???щ즺留??쒖꽦???섎㈃ "Manhattan"?대쫫?????
         else if (AlcoholObject[8].activeSelf && AlcoholObject[11].activeSelf
             && AlcoholObject[32].activeSelf && NonAlcoholObject[20].activeSelf
             && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             //Debug.Log("Manhattan");
-            //SaveSelectedCocktail("Manhattan"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Manhattan"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
-         // 각 배열에 입력된 재료들 중 Dry Martini 레시피에 해당된 재료만 활성화 되면 "Dry Martini"이름을 저장
+         // 媛?諛곗뿴???낅젰???щ즺??以?Dry Martini ?덉떆?쇱뿉 ?대떦???щ즺留??쒖꽦???섎㈃ "Dry Martini"?대쫫?????
         else if (AlcoholObject[1].activeSelf && AlcoholObject[12].activeSelf
             && NonAlcoholObject[18].activeSelf && CocktaillGlassObject[6].activeSelf
 && ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             //Debug.Log("Dry Martini");
-            //SaveSelectedCocktail("Dry Martini"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Dry Martini"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[8].activeSelf && AlcoholObject[32].activeSelf
             && NonAlcoholObject[17].activeSelf && NonAlcoholObject[12].activeSelf
@@ -80,17 +80,17 @@ public class cocktailingredients : MonoBehaviour
 )
         {
             
-            //SaveSelectedCocktail("Old Fashioned"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Old Fashioned"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[15].activeSelf
-            && NonAlcoholObject[9].activeSelf &&/*넛트파우더로 변경*/ NonAlcoholObject[0].activeSelf && CocktaillGlassObject[6].activeSelf
+            && NonAlcoholObject[9].activeSelf &&/*?쏇듃?뚯슦?붾줈 蹂寃?/ NonAlcoholObject[0].activeSelf && CocktaillGlassObject[6].activeSelf
 && ToolObject[14].activeSelf            &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
-            //넛트 파우더 추가
-            //SaveSelectedCocktail("Brandy Aiexander"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //?쏇듃 ?뚯슦??異붽?
+            //SaveSelectedCocktail("Brandy Aiexander"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[1].activeSelf && AlcoholObject[33].activeSelf
             && NonAlcoholObject[4].activeSelf && NonAlcoholObject[17].activeSelf && NonAlcoholObject[12].activeSelf 
@@ -98,16 +98,16 @@ public class cocktailingredients : MonoBehaviour
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf))
         {
             
-            //SaveSelectedCocktail("Singapore Sling"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Singapore Sling"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[0].activeSelf && AlcoholObject[14].activeSelf
             &&CocktaillGlassObject[2].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Black Russian"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Black Russian"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[2].activeSelf && (AlcoholObject[27].activeSelf ||AlcoholObject[17].activeSelf)
             && NonAlcoholObject[11].activeSelf && NonAlcoholObject[16].activeSelf && CocktaillGlassObject[6].activeSelf
@@ -116,16 +116,16 @@ public class cocktailingredients : MonoBehaviour
 )
         {
             
-            //SaveSelectedCocktail("Mararita"); //해당 칵테일 이름 저장
-            CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Mararita"); //?대떦 移듯뀒???대쫫 ???
+            CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[9].activeSelf && AlcoholObject[18].activeSelf
             && CocktaillGlassObject[2].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Rusty Nail"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Rusty Nail"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[8].activeSelf && NonAlcoholObject[4].activeSelf
             && NonAlcoholObject[17].activeSelf && NonAlcoholObject[12].activeSelf
@@ -134,8 +134,8 @@ public class cocktailingredients : MonoBehaviour
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf))
         {
             
-            //SaveSelectedCocktail("Whiskey Sour"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Whiskey Sour"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[8].activeSelf && NonAlcoholObject[11].activeSelf
             && NonAlcoholObject[17].activeSelf && NonAlcoholObject[1].activeSelf
@@ -143,33 +143,33 @@ public class cocktailingredients : MonoBehaviour
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("New York"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("New York"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[6].activeSelf && NonAlcoholObject[11].activeSelf
             && NonAlcoholObject[17].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Daiquirl"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Daiquirl"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[14].activeSelf && AlcoholObject[20].activeSelf && AlcoholObject[21].activeSelf
             &&  CocktaillGlassObject[8].activeSelf && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Cocktail_B52"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Cocktail_B52"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
-        else if (AlcoholObject[23].activeSelf && AlcoholObject[19].activeSelf && /*바나나리큐르*/AlcoholObject[0].activeSelf
+        else if (AlcoholObject[23].activeSelf && AlcoholObject[19].activeSelf && /*諛붾굹?섎━?먮Ⅴ*/AlcoholObject[0].activeSelf
             && NonAlcoholObject[10].activeSelf && NonAlcoholObject[0].activeSelf 
             && NonAlcoholObject[20].activeSelf && NonAlcoholObject[21].activeSelf 
             && CocktaillGlassObject[4].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) )
         {
             
-            //SaveSelectedCocktail("Jun Bug"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Jun Bug"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[7].activeSelf && NonAlcoholObject[11].activeSelf
             && NonAlcoholObject[2].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf
@@ -177,8 +177,8 @@ public class cocktailingredients : MonoBehaviour
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Bacardi Cocktail"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Bacardi Cocktail"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[6].activeSelf && NonAlcoholObject[11].activeSelf
             && NonAlcoholObject[13].activeSelf && NonAlcoholObject[19].activeSelf 
@@ -186,26 +186,26 @@ public class cocktailingredients : MonoBehaviour
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Cuba Libre"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Cuba Libre"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[11].activeSelf && AlcoholObject[16].activeSelf
             && NonAlcoholObject[9].activeSelf && CocktaillGlassObject[11].activeSelf&& ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Grasshopper"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Grasshopper"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[0].activeSelf && NonAlcoholObject[8].activeSelf
             && NonAlcoholObject[6].activeSelf
-            &&(/*라임*/NonAlcoholObject[11].activeSelf || NonAlcoholObject[19].activeSelf) 
+            &&(/*?쇱엫*/NonAlcoholObject[11].activeSelf || NonAlcoholObject[19].activeSelf) 
             && CocktaillGlassObject[3].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Seabreeze"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Seabreeze"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[0].activeSelf && AlcoholObject[25].activeSelf
             && NonAlcoholObject[11].activeSelf && NonAlcoholObject[23].activeSelf
@@ -213,16 +213,16 @@ public class cocktailingredients : MonoBehaviour
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Apple Martini"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Apple Martini"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[1].activeSelf && AlcoholObject[13].activeSelf && AlcoholObject[26].activeSelf
             && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[2].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Negroni"); //해당 칵테일 이름 저장
-              CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Negroni"); //?대떦 移듯뀒???대쫫 ???
+              CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[1].activeSelf && AlcoholObject[0].activeSelf && AlcoholObject[6].activeSelf
             && AlcoholObject[17].activeSelf && AlcoholObject[2].activeSelf && NonAlcoholObject[0].activeSelf
@@ -231,16 +231,16 @@ public class cocktailingredients : MonoBehaviour
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("LongIslandIcedTea"); //해당 칵테일 이름 저장
-                         CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("LongIslandIcedTea"); //?대떦 移듯뀒???대쫫 ???
+                         CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[17].activeSelf
             && NonAlcoholObject[4].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Sidecar"); //해당 칵테일 이름 저장
-                         CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Sidecar"); //?대떦 移듯뀒???대쫫 ???
+                         CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[6].activeSelf && AlcoholObject[17].activeSelf
             && NonAlcoholObject[10].activeSelf && NonAlcoholObject[11].activeSelf 
@@ -250,8 +250,8 @@ public class cocktailingredients : MonoBehaviour
              && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("MaiTai"); //해당 칵테일 이름 저장
-                         CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("MaiTai"); //?대떦 移듯뀒???대쫫 ???
+                         CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[6].activeSelf && NonAlcoholObject[10].activeSelf
             && NonAlcoholObject[3].activeSelf && NonAlcoholObject[20].activeSelf
@@ -259,8 +259,8 @@ public class cocktailingredients : MonoBehaviour
             && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf )
         {
             
-            //SaveSelectedCocktail("PinaColada"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("PinaColada"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[0].activeSelf && AlcoholObject[17].activeSelf
             && NonAlcoholObject[11].activeSelf && NonAlcoholObject[8].activeSelf && CocktaillGlassObject[0].activeSelf
@@ -268,40 +268,40 @@ public class cocktailingredients : MonoBehaviour
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Cosmopolitan"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Cosmopolitan"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[0].activeSelf && NonAlcoholObject[11].activeSelf
             && NonAlcoholObject[15].activeSelf && CocktaillGlassObject[3].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("MoscowMule"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("MoscowMule"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[2].activeSelf
             && NonAlcoholObject[4].activeSelf && NonAlcoholObject[5].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) )
         {
             
-            //SaveSelectedCocktail("Apricot"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Apricot"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[3].activeSelf && AlcoholObject[29].activeSelf && AlcoholObject[17].activeSelf
             && NonAlcoholObject[4].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Honeymoon"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Honeymoon"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[6].activeSelf && AlcoholObject[30].activeSelf && AlcoholObject[19].activeSelf
             && NonAlcoholObject[10].activeSelf && CocktaillGlassObject[16].activeSelf&& ToolObject[14].activeSelf
              && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("BlueHawaiian"); //해당 칵테일 이름 저장
-                         CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("BlueHawaiian"); //?대떦 移듯뀒???대쫫 ???
+                         CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[31].activeSelf //&& AlcoholObject[0].activeSelf
             && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[9].activeSelf
@@ -309,8 +309,8 @@ public class cocktailingredients : MonoBehaviour
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Kir"); //해당 칵테일 이름 저장
-                       CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Kir"); //?대떦 移듯뀒???대쫫 ???
+                       CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[2].activeSelf && NonAlcoholObject[1].activeSelf
             && NonAlcoholObject[5].activeSelf && CocktaillGlassObject[16].activeSelf&& ToolObject[14].activeSelf
@@ -318,48 +318,48 @@ public class cocktailingredients : MonoBehaviour
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("TequilaSunrise"); //해당 칵테일 이름 저장
-                         CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("TequilaSunrise"); //?대떦 移듯뀒???대쫫 ???
+                         CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[36].activeSelf && AlcoholObject[29].activeSelf && AlcoholObject[31].activeSelf
             && NonAlcoholObject[0].activeSelf && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Healing"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Healing"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[38].activeSelf && AlcoholObject[10].activeSelf
             && NonAlcoholObject[7].activeSelf && NonAlcoholObject[1].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Jindo"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Jindo"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[37].activeSelf && AlcoholObject[17].activeSelf && AlcoholObject[25].activeSelf
             && NonAlcoholObject[11].activeSelf && NonAlcoholObject[23].activeSelf  && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("PuppyLove"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("PuppyLove"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[39].activeSelf && AlcoholObject[14].activeSelf && AlcoholObject[25].activeSelf
             && NonAlcoholObject[11].activeSelf && CocktaillGlassObject[6].activeSelf && ToolObject[14].activeSelf&&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf  && ToolObject[9].activeSelf 
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf))
         {
             
-            //SaveSelectedCocktail("Geumsan"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Geumsan"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[40].activeSelf && AlcoholObject[17].activeSelf 
             && NonAlcoholObject[15].activeSelf && CocktaillGlassObject[12].activeSelf&& ToolObject[14].activeSelf
             &&ToolObject[10].activeSelf && ToolObject[11].activeSelf && ToolObject[13].activeSelf && ToolObject[2].activeSelf  && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("Gochang"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("Gochang"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (AlcoholObject[1].activeSelf && NonAlcoholObject[12].activeSelf && NonAlcoholObject[17].activeSelf
             && NonAlcoholObject[4].activeSelf && NonAlcoholObject[19].activeSelf && CocktaillGlassObject[3].activeSelf
@@ -367,30 +367,30 @@ public class cocktailingredients : MonoBehaviour
          && (ToolObject[0].activeSelf || ToolObject[1].activeSelf) && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf))
         {
             
-           // SaveSelectedCocktail("GinFizz"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+           // SaveSelectedCocktail("GinFizz"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (NonAlcoholObject[19].activeSelf && NonAlcoholObject[17].activeSelf
             && NonAlcoholObject[12].activeSelf && CocktaillGlassObject[3].activeSelf&& ToolObject[14].activeSelf&ToolObject[10].activeSelf && ToolObject[11].activeSelf 
         && (ToolObject[5].activeSelf || ToolObject[6].activeSelf || ToolObject[7].activeSelf) && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("FreshLemonSquash"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("FreshLemonSquash"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         else if (NonAlcoholObject[5].activeSelf && NonAlcoholObject[8].activeSelf && NonAlcoholObject[1].activeSelf && NonAlcoholObject[4].activeSelf
             && NonAlcoholObject[10].activeSelf && NonAlcoholObject[6].activeSelf && CocktaillGlassObject[0].activeSelf
 && ToolObject[14].activeSelf             && ToolObject[11].activeSelf && ToolObject[12].activeSelf && ToolObject[9].activeSelf)
         {
             
-            //SaveSelectedCocktail("VurginFruitPunch"); //해당 칵테일 이름 저장
-                      CocktailMaking();// 다음 조주 씬으로 이동
+            //SaveSelectedCocktail("VurginFruitPunch"); //?대떦 移듯뀒???대쫫 ???
+                      CocktailMaking();// ?ㅼ쓬 議곗＜ ?ъ쑝濡??대룞
         }
         
         else
         {
-            notcheck.SetActive(true);// 틀린 레시피 제조 시 "다시 선택" 텍스트 활성화
-            Invoke("notcheck1", 0.7f); //0.7초 후 비활성화
+            notcheck.SetActive(true);// ?由??덉떆???쒖“ ??"?ㅼ떆 ?좏깮" ?띿뒪???쒖꽦??
+            Invoke("notcheck1", 0.7f); //0.7珥???鍮꾪솢?깊솕
         }
 
 
@@ -398,24 +398,24 @@ public class cocktailingredients : MonoBehaviour
 
     /*public void SaveSelectedCocktail(string cocktailName)
     {
-        PlayerPrefs.SetString("SelectedCocktail", cocktailName); // 선택된 칵테일 이름 저장
+        PlayerPrefs.SetString("SelectedCocktail", cocktailName); // ?좏깮??移듯뀒???대쫫 ???
     }*/
 
     public void CocktailMaking()
     {
         nextbtnM();
-        SceneManager.LoadScene(2); // 로드씬 2(조주씬 임의 번호)로 이동
+        SceneManager.LoadScene("ProtoTable"); // 濡쒕뱶??2(議곗＜???꾩쓽 踰덊샇)濡??대룞
         
     }
 
 
     private void notcheck1()
     {
-        notcheck.SetActive(false); //"다시 선택" 비활성화
+        notcheck.SetActive(false); //"?ㅼ떆 ?좏깮" 鍮꾪솢?깊솕
     }
 
 
-public void nextbtnM()// 번호 넘기기
+public void nextbtnM()// 踰덊샇 ?섍린湲?
 {
     List<int> selectedAlcoholObjectIndices = new List<int>();
     List<int> selectedNonAlcoholObjectIndices = new List<int>();
@@ -454,7 +454,7 @@ public void nextbtnM()// 번호 넘기기
     SaveSelectedObjects(selectedAlcoholObjectIndices,selectedNonAlcoholObjectIndices,selectedCocktaillGlassObjectIndices,selectedToolObjectIndices);
     
 
-    SceneManager.LoadScene(2);
+    SceneManager.LoadScene("ProtoTable");
 }
 
 public void SaveSelectedObjects(List<int> selectedAlcoholObjectIndices,List<int> selectedNonAlcoholObjectIndices,List<int> selectedCocktaillGlassObjectIndices,List<int> selectedToolObjectIndices)
