@@ -34,8 +34,8 @@ public class Hintbar : MonoBehaviour
     {
         hintcnt +=1;
 
-        string textData = PlayerPrefs.GetString("textData");
-        textUI.text = textData;
+        string textData = PlayerPrefs.GetString("Cocktailname");
+        
         // 칵테일 선택씬 플레이어프리팹 받아옴
         if(textData == "PoussCafe_menu")//플레이어 프리팹에 해당되는 문자와 칵테일 문자 맞으면 힌트 버튼 누를 시에 해당 칵테일에 대한 힌트 활성화됨
         {
