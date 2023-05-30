@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum TechniqueType
 {
@@ -110,8 +111,14 @@ public class PouringSceneMng : MonoBehaviour
             timer.SetTime(timeLimit);
             if (timeLimit <= 0)
             {
+
+                SceneChange("FailScene");
                 Debug.Log("�ð� ����");
             }
         }
+    }
+    public void SceneChange(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 }

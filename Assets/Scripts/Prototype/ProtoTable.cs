@@ -45,6 +45,11 @@ public class ProtoTable : MonoBehaviour
     [SerializeField]
     private GameObject ToastMsg;
 
+    private  List<int> selectedAlcoholObjectIndices = new List<int>();
+    private List<int> selectedNonAlcoholObjectIndices = new List<int>();
+    private List<int> selectedCocktaillGlassObjectIndices = new List<int>();
+    private List<int> selectedToolObjectIndices = new List<int>();
+
 
     [SerializeField]
     private TableCoaster coaster = null;
@@ -62,13 +67,56 @@ public class ProtoTable : MonoBehaviour
             timeLimit = PlayerPrefs.GetInt("TimerCount");
         if (isUsingPre)
         {
-            //??ル∥吏???⑹맶???됯뎡??ル∥???깅튂???ル∥吏???⑹맶???됯뎡 ??ル∥吏???⑹맶?
-
+            
         }
         else
         {
-            //??ル∥吏???⑹맶???됯뎡??ル∥???깅튂???ル∥吏???⑹맶???됯뎡 ??ル∥堉??源녾뎡??
-            //PlayerPref??ル∥吏???⑹맶???됯뎡 ??ル∥吏???⑹맶???됯뎡??ル∥吏????ル∥吏???⑹맶???됯뎡??ル∥吏???⑹맶???됯뎡
+            int selectedAlcoholObjectsCount = PlayerPrefs.GetInt("SelectedAlcoholObjectsCount");
+            int selectedNonAlcoholObjectsCount = PlayerPrefs.GetInt("SelectedNonAlcoholObjectsCount");
+            int selectedCocktaillGlassObjectsCount = PlayerPrefs.GetInt("SelectedCocktaillGlassObjectsCount");
+            int selectedToolObjectsCount = PlayerPrefs.GetInt("SelectedToolObjectsCount");
+            Debug.Log("alCount:"+ selectedAlcoholObjectsCount+ "nonCount:" + selectedNonAlcoholObjectsCount + "glCount:" + selectedCocktaillGlassObjectsCount + "toCount:" + selectedToolObjectsCount);
+            for (int i = 0; i < selectedAlcoholObjectsCount; i++)
+            {
+                int AlcoholobjectIndex = PlayerPrefs.GetInt("SelectedAlcoholObjectIndex" + i);
+                selectedAlcoholObjectIndices.Add(AlcoholobjectIndex);
+                Debug.Log("Alcohol : " + AlcoholobjectIndex);
+
+            }
+            for (int i = 0; i < selectedNonAlcoholObjectsCount; i++)
+            {
+                int NonAlcoholobjectIndex = PlayerPrefs.GetInt("SelectedNonAlcoholObjectIndex" + i);
+                selectedNonAlcoholObjectIndices.Add(NonAlcoholobjectIndex);
+                Debug.Log("NonAlcohol : " + NonAlcoholobjectIndex);
+            }
+            for (int i = 0; i < selectedCocktaillGlassObjectsCount; i++)
+            {
+                int CocktaillGlassobjectIndex = PlayerPrefs.GetInt("SelectedCocktaillGlassObjectIndex" + i);
+                if (PlayerPrefs.GetInt("BlackRussiansuccese") == 1 && CocktaillGlassobjectIndex == 2)
+                {
+                    selectedCocktaillGlassObjectIndices.Add(19);
+                    continue;
+                }
+                if (PlayerPrefs.GetInt("PousseCafesuccese") == 1 && CocktaillGlassobjectIndex == 7)
+                {
+                    selectedCocktaillGlassObjectIndices.Add(19);
+                    continue;
+                }
+                if (PlayerPrefs.GetInt("B52succese") == 1 && CocktaillGlassobjectIndex == 8)
+                {
+                    selectedCocktaillGlassObjectIndices.Add(19);
+                    continue;
+                }
+
+                selectedCocktaillGlassObjectIndices.Add(CocktaillGlassobjectIndex);
+                Debug.Log("CocktaillGlass : " + CocktaillGlassobjectIndex);
+            }
+            for (int i = 0; i < selectedToolObjectsCount; i++)
+            {
+                int ToolobjectIndex = PlayerPrefs.GetInt("SelectedToolObjectIndex" + i);
+                selectedToolObjectIndices.Add(ToolobjectIndex);
+                Debug.Log("Tool : " + ToolobjectIndex);
+            }
         }
     }
 
@@ -96,6 +144,14 @@ public class ProtoTable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            timeLimit -= 10;
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            timeLimit += 10;
+        }
     }
 
     private IEnumerator TimerCount()
@@ -108,6 +164,7 @@ public class ProtoTable : MonoBehaviour
             timer.SetTime(timeLimit);
             if(timeLimit <= 0)
             {
+                SceneChange("FailScene");
                 Debug.Log("??ル∥六???걠????ル∥吏???⑹맶???됯뎡");
             }
         }
@@ -117,23 +174,48 @@ public class ProtoTable : MonoBehaviour
     {
         Vector3 pos = transform.position;
         int i = 0;
-        foreach (ToolName toolID in preTools) {
-            pos = toolPos[i++];
-            Instantiate(this.tools[(char)toolID], pos, Quaternion.identity, transform);
-
+        if (isUsingPre)
+        {
+            foreach (ToolName toolID in preTools)
+            {
+                pos = toolPos[i++];
+                Instantiate(this.tools[(char)toolID], pos, Quaternion.identity, transform);
+            }
         }
+        else
+        {
+            foreach (int toolID in selectedToolObjectIndices)
+            {
+                pos = toolPos[i++];
+                Instantiate(this.tools[toolID], pos, Quaternion.identity, transform);
+            }
+        }
+
     }
 
     private void GlassSet()
     {
         Vector3 pos = transform.position;
         int i = 0;
-        foreach (GlassName glassID in preGlasses)
-        {
-            pos = glassPos[i];
-            Instantiate(this.glasses[(char)glassID], pos, Quaternion.identity, transform).GetComponent<Glass>().SetID(i);
-            i++;
 
+        if (isUsingPre)
+        {
+            foreach (GlassName glassID in preGlasses)
+            {
+                pos = glassPos[i];
+                Instantiate(this.glasses[(char)glassID], pos, Quaternion.identity, transform).GetComponent<Glass>().SetID(i);
+                i++;
+
+            }
+        }
+        else
+        {
+            foreach (int glassID in selectedCocktaillGlassObjectIndices)
+            {
+                pos = glassPos[i];
+                Instantiate(this.glasses[glassID], pos, Quaternion.identity, transform).GetComponent<Glass>().SetID(i);
+                i++;
+            }
         }
     }
 
@@ -141,12 +223,27 @@ public class ProtoTable : MonoBehaviour
     {
         Vector3 pos = transform.position;
         int i = 0;
-        foreach (DrinkName alcoholID in preDrinks)
+        if (isUsingPre)
         {
-            pos = drinkPos[i++];
-            Instantiate(this.alcohols[(char)alcoholID], pos, Quaternion.identity, transform);
-            
+            foreach (DrinkName alcoholID in preDrinks)
+            {
+                pos = drinkPos[i++];
+                Instantiate(this.alcohols[(char)alcoholID], pos, Quaternion.identity, transform);
+            }
+        }
+        else
+        {
+            foreach (int alcoholID in selectedAlcoholObjectIndices)
+            {
+                pos = drinkPos[i++];
+                Instantiate(this.alcohols[alcoholID], pos, Quaternion.identity, transform);
+            }
+            foreach (int alcoholID in selectedNonAlcoholObjectIndices)
+            {
+                pos += drinkPos[i++];
+                Instantiate(this.alcohols[alcoholID+43], pos, Quaternion.identity, transform);
 
+            }
         }
     }
 
@@ -154,12 +251,25 @@ public class ProtoTable : MonoBehaviour
     {
         Vector3 pos = transform.position;
         int i = 0;
-        foreach (DrinkName nAlcoholicID in preDrinks)
+        if (isUsingPre)
         {
+            foreach (DrinkName nAlcoholicID in preDrinks)
+            {
 
-            Instantiate(this.nonAlcoholics[(char)nAlcoholicID], pos, Quaternion.identity, transform);
-            pos += drinkPos[i++];
+                Instantiate(this.nonAlcoholics[(char)nAlcoholicID], pos, Quaternion.identity, transform);
+                pos += drinkPos[i++];
 
+            }
+        }
+        else
+        {
+            foreach (int nAlcoholicID in selectedNonAlcoholObjectIndices)
+            {
+
+                Instantiate(this.nonAlcoholics[nAlcoholicID], pos, Quaternion.identity, transform);
+                pos += drinkPos[i++];
+
+            }
         }
     }
 
@@ -171,22 +281,26 @@ public class ProtoTable : MonoBehaviour
         Debug.Log(FindCocktailByGlassInfo(glass));
         if(FindCocktailByGlassInfo(glass) == CocktailName.BlackRussian )
         {
-            PlayerPrefs.SetInt("succese1",1);
+            PlayerPrefs.SetInt("BlackRussiansuccese", 1);
+            coaster.SubmitGlass();
         }
         if (FindCocktailByGlassInfo(glass) == CocktailName.PousseCafe)
         {
-            PlayerPrefs.SetInt("succese2", 1);
+            PlayerPrefs.SetInt("PousseCafesuccese", 1);
+            coaster.SubmitGlass();
         }
         if (FindCocktailByGlassInfo(glass) == CocktailName.B52)
         {
-            PlayerPrefs.SetInt("succese3", 1);
+            PlayerPrefs.SetInt("B52succese", 1);
+            coaster.SubmitGlass();
         }
 
-        if(PlayerPrefs.HasKey("succese1")&& PlayerPrefs.HasKey("succese2")&& PlayerPrefs.HasKey("succese2"))
+        if(PlayerPrefs.HasKey("BlackRussiansuccese") && PlayerPrefs.HasKey("PousseCafesuccese") && PlayerPrefs.HasKey("B52succese"))
         {
-            if(PlayerPrefs.GetInt("succese1") == 1 && PlayerPrefs.GetInt("succese2") == 1&& PlayerPrefs.GetInt("succese3") == 1)
+            Debug.Log(PlayerPrefs.GetInt("BlackRussiansuccese") + PlayerPrefs.GetInt("PousseCafesuccese") + PlayerPrefs.GetInt("B52succese"));
+            if(PlayerPrefs.GetInt("BlackRussiansuccese") == 1 && PlayerPrefs.GetInt("PousseCafesuccese") == 1&& PlayerPrefs.GetInt("B52succese") == 1)
             {
-                SceneChange();
+                SceneChange("SuccessScene");
             }
         }
     }
@@ -238,7 +352,7 @@ public class ProtoTable : MonoBehaviour
             }
         }
 
-        Instantiate(ToastMsg, Vector2.zero,Quaternion.identity, ToastPoint).GetComponent<ToastText>().SetText("??筌앸럽泥? ???담궘???덈펲.");
+        Instantiate(ToastMsg, Vector2.zero,Quaternion.identity, ToastPoint).GetComponent<ToastText>().SetText("조주법이 맞지 않습니다.");
 
         return CocktailName.Null;
     }
@@ -247,8 +361,8 @@ public class ProtoTable : MonoBehaviour
     {
         return false;
     }
-    public void SceneChange()
+    public void SceneChange(string name)
     {
-        SceneManager.LoadScene("SuccessScene");
+        SceneManager.LoadScene(name);
     }
 }

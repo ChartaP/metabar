@@ -39,6 +39,12 @@ public class TableCoaster : MonoBehaviour
         get { return glassPos; }
     }
 
+    public void SubmitGlass()
+    {
+        Destroy(placedGlass);
+        placedGlass = null;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

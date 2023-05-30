@@ -704,6 +704,7 @@ MonoBehaviour:
   - {fileID: 2065820386723896269, guid: 46976331404bb5446bf7d463468438ea, type: 3}
   - {fileID: 2065820386723896269, guid: 5ff17aff5c0030a42bdadff5b6f98a54, type: 3}
   - {fileID: 2065820386723896269, guid: 8d58cbd35c3e48148b651aada73ee60e, type: 3}
+  - {fileID: 2065820386723896269, guid: ee674d1db7810004b8afbf3fdbfdc012, type: 3}
   alcohols:
   - {fileID: 3073458263363808376, guid: e1d3d483b107f0647bb024a79a71fdbf, type: 3}
   - {fileID: 3073458263363808376, guid: a720a942478c4714b9186bf003c72a62, type: 3}
@@ -757,7 +758,7 @@ MonoBehaviour:
   - {fileID: 3073458263363808376, guid: f556898637d356e48ad60292945fc2cc, type: 3}
   - {fileID: 3073458263363808376, guid: f556898637d356e48ad60292945fc2cc, type: 3}
   nonAlcoholics: []
-  isUsingPre: 1
+  isUsingPre: 0
   toolPos:
   - {x: -8, y: -2, z: 0}
   - {x: -8, y: 0, z: 1}
