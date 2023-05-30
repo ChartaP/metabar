@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Time2min : MonoBehaviour
 {
-    public Text[] timeText; //타이머 텍스트  timeText[0] = min(text) , timeText[1] = sec(text)
+    public TextMeshProUGUI[] timeText; //타이머 텍스트  timeText[0] = min(text) , timeText[1] = sec(text)
     public float time = 120; //제한시간 2분
     private int min, sec; // 분,초
     private bool timestart=true;

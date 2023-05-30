@@ -21,15 +21,16 @@ public class buttonctrl2 : MonoBehaviour
     }
     public void Button()
     {
-        // ÅØ½ºÆ®¸¦ ÀúÀåÇÏ°í ´ÙÀ½ ¾ÀÀ¸·Î Àü´Þ
+        // ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         PlayerPrefs.SetString("TextData", inputtext.text);
         SceneManager.LoadScene(2);
     }
     public void Button2()
     {
-        // ÅØ½ºÆ®¸¦ ÀúÀåÇÏ°í ´ÙÀ½ ¾ÀÀ¸·Î Àü´Þ
+        // ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         PlayerPrefs.SetString("TextData", inputtext.text);
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(20);
+        Debug.Log(inputtext);
     }
 
 

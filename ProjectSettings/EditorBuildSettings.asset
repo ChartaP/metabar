@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Porotcupboard/Scenes/ProtoCupboard_practice.unity
     guid: 7d36965fafefd7f46b9dbefdbeb84216
+  - enabled: 1
+    path: Assets/Porotcupboard/Scenes/ProtoCupboard_Actual.unity
+    guid: df193dc3fc5d7fc449a875ed118b8dd5
   m_configObjects: {}

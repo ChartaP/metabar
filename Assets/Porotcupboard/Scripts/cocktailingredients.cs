@@ -401,7 +401,7 @@ public class cocktailingredients : MonoBehaviour
         PlayerPrefs.SetString("SelectedCocktail", cocktailName); // 선택된 칵테일 이름 저장
     }*/
 
-    public void             CocktailMaking()
+    public void CocktailMaking()
     {
         nextbtnM();
         SceneManager.LoadScene(2); // 로드씬 2(조주씬 임의 번호)로 이동

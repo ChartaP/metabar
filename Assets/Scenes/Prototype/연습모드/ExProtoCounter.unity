@@ -608,7 +608,7 @@ GameObject:
   - component: {fileID: 620417961}
   - component: {fileID: 620417962}
   m_Layer: 5
-  m_Name: menu text
+  m_Name: BlackRussian_menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 1647263068}
   - component: {fileID: 1647263072}
   m_Layer: 5
-  m_Name: menu text2
+  m_Name: PousseCafe_menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2571,7 +2571,7 @@ GameObject:
   - component: {fileID: 2079347167}
   - component: {fileID: 2079347171}
   m_Layer: 5
-  m_Name: menu text3
+  m_Name: B52_menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
