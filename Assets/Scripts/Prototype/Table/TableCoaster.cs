@@ -11,7 +11,7 @@ public class TableCoaster : MonoBehaviour
     private GameObject placedGlass = null;
 
     /// <summary>
-    /// 占쌘쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙트占쏙옙 占쌍댐옙占쏙옙?
+    /// ?�쌘?�옙?�쏙???�쏙?�占?�옙 ?�쏙?�占?�옙?�쏙?�트?�쏙???�쌍?�옙?�쏙??
     /// </summary>
     public bool IsPlaced
     {
@@ -32,7 +32,7 @@ public class TableCoaster : MonoBehaviour
     }
 
     /// <summary>
-    /// 占쌘쏙옙占쏙옙 占쏙옙占쏙옙 占시띰옙占쏙옙占?占쌜띰옙占쏙옙 占쏙옙치
+    /// ?�쌘?�옙?�쏙???�쏙?�占?�옙 ?�시?�옙?�쏙?�占??�쌜?�옙?�쏙???�쏙?�치
     /// </summary>
     public Vector3 GlassPos
     {

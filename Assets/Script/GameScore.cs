@@ -20,6 +20,13 @@ public class GameScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(PlayerPrefs.GetInt("writemode") == 0) // 0 is justtest;
+        {
+            ProblemLast = 10;
+        }else if(PlayerPrefs.GetInt("writemode") == 1)// 1 is realtest
+        {
+            ProblemLast = 40;
+        }
         startCounter = 0;
         Problem = 0;
         Match = startCounter;

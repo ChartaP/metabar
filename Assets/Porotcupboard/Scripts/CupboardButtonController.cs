@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CupboardButtonController : MonoBehaviour
 {    
-    //씬 전환 스크립트
+    //???꾪솚 ?ㅽ겕由쏀듃
 
   
     
@@ -18,21 +18,19 @@ public class CupboardButtonController : MonoBehaviour
 
     public void CupbordpracticeRestartScene()
     {
-        SceneManager.LoadScene("ProtoCupboard_practice"); //씬 재시작 // 타임 아웃 후 뜨는 UI 창을 누르면 재시작하는 스크립트 //임의0번
+        SceneManager.LoadScene("ProtoCupboard_practice"); //???ъ떆??// ????꾩썐 ???⑤뒗 UI 李쎌쓣 ?꾨Ⅴ硫??ъ떆?묓븯???ㅽ겕由쏀듃 //?꾩쓽0踰?
     }
     public void CupbordRestartScene()
     {
-        SceneManager.LoadScene("ProtoCupboard"); //씬 재시작 // 타임 아웃 후 뜨는 UI 창을 누르면 재시작하는 스크립트 //임의0번
+        SceneManager.LoadScene("ProtoCupboard"); //???ъ떆??// ????꾩썐 ???⑤뒗 UI 李쎌쓣 ?꾨Ⅴ硫??ъ떆?묓븯???ㅽ겕由쏀듃 //?꾩쓽0踰?
     }
 
     public void CupboardBeforScene()
     {
-        SceneManager.LoadScene(0); // 컵보드 바의 이전씬으로 이동 //임의 0번
+        SceneManager.LoadScene(0); // 而듬낫??諛붿쓽 ?댁쟾?ъ쑝濡??대룞 //?꾩쓽 0踰?
     }
      public void CupboardHomeScene()
     {
-        SceneManager.LoadScene(0); // 메인 메뉴로 이동 //임의 0번
+        SceneManager.LoadScene(0); // 硫붿씤 硫붾돱濡??대룞 //?꾩쓽 0踰?
     }
-
-    
 }
