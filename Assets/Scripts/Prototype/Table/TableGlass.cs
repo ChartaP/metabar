@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.Port;
 
 /// <summary>
-/// Table¾À¿¡¼­ »ç¿ëÇÒ Glass
+/// Tableì”¬ì—ì„œ ì‚¬ìš©í•  Glass
 /// </summary>
 [RequireComponent(typeof(Glass))]
 public class TableGlass : TableObject
